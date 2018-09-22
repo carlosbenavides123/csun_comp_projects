@@ -9,27 +9,36 @@ X   EQU 0xBF
 Y   EQU 0x00112233
 ;define the registers
 ;notice we used DCD
-X1  DCD 0x40000008
-Y1  DCD 0x4000000C
+X1  EQU 0x40000008
+Y1  EQU 0x4000000C
 
-SECOND  DCD 0X44663377
-THIRD   DCD 0X00112233
-ADDSUM  DCD 0X40000010
-SUBSUM  DCD 0X40000014
+SECOND  EQU 0X44663377
+THIRD   EQU 0X00112233
+ADDSUM  EQU 0X40000010
+SUBSUM  EQU 0X40000014
 
     ENTRY
-    LDR R0,=X
-    LDR R1,=Y
-    STR R0,X1
-    STR R1,Y1
+	LDR R0,=X;val
+    LDR R1,=Y;val
+	LDR R2,=X1;memory loc
+	LDR R3,=Y1;memory loc
+    STR R0,[R2]
+	STR R1,[R3]
 
-    LDR R0,SECOND
-    LDR R6,THIRD
-    ADD R3,R1,R0;r1+r0 = r3
-    STR R3,ADDSUM
-    SUB R4,R5,R6;r5+r6 = r4
-    STR R4,SUBSUM
-
+	;TASK2 - ADD
+	;ADD 0XBF, 0x00112233
+	LDR R2,=ADDSUM;memory loc
+    ADD R4,R0,R1
+	STR R4,[R2]
+	
+	;TASK2 - SUBTRACT
+	;SUBTRACT
+	;0x44663377-0x00112233
+	LDR R3,=SUBSUM;memory loc
+	LDR R5, =SECOND
+	LDR R6, =THIRD
+    SUB R7,R5,R6
+    STR R7,[R3]
 
 ;footer code/stop code
 stop    B stop ;endless loop to make the program hang

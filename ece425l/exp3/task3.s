@@ -9,15 +9,17 @@ X   EQU 0xBF
 Y   EQU 0x00112233
 ;define the registers
 ;notice we used DCD
-X1  DCD 0x40000008
-Y1  DCD 0x4000000C
-STORE DCD 0x40000018
+X1  EQU 0x40000008
+Y1  EQU 0x4000000C
+STORE EQU 0x40000018
 
     ENTRY
     LDR R0,=X
-    STR R0,X1
-    ROR R5, R0,#4
-    STR R5,STORE
+	LDR R8,=X1
+    STR R0,[R8]
+	LDR R7, =STORE
+    ROR R1, R0,#4
+    STR R1,[R7]
 
 
 ;footer code/stop code

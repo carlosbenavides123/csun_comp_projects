@@ -3,21 +3,23 @@
         AREA mycode, CODE,Readonly
 Reset_Handler;crucial placement
 
-task4; clarity
+task3; clarity
 ;define the values
 X   EQU 0xBF
 Y   EQU 0x00112233
 ;define the registers
 ;notice we used DCD
-X1      DCD 0x40000008
-Y1      DCD 0x4000000C
-STORE   DCD 0x4000001A
+X1  EQU 0x40000008
+Y1  EQU 0x4000000C
+STORE EQU 0x40000018
 
     ENTRY
     LDR R0,=X
-    STR R0,X1
+	LDR R8,=X1
+    STR R0,[R8]
     LSL R5, R0,#2
-    STR R5,STORE
+	LDR R7, =STORE
+    STR R5,[R7]
 
 
 ;footer code/stop code
