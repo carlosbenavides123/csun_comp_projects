@@ -22,24 +22,29 @@ t14 	DCD		(0x1:SHL:14)
 		
 		;make swith read status of switch?
 		ldr r1, =IO0DIR
-		mov r2, #0
-		str r2, [r1]
+		mov r2, #0xFF00
+		str r2,[r1]
+		;#mov r2, #0
+		;str r2, [r1]
 		
 		;read signal level
 		ldr r2, =IO0PIN
 		ldr r3, t14
 		AND r3, r2,r3
 		
+		CMP r3, #1
+		BEQ myDelay
 		
-		CMP r3, #0 ; is IO0pin 0 or 1?
-				   ; if true, z is set, else z is clr
-		;TST r0,#xFF test if lower bits of r0 are all zeros
+myDelay
+		ldr r8, =0xffff
+		sub r8,r8,#1
+		cmp r8, #0
+		BNE myDelay
+		BEQ Result
+Result
+		ldr r6,t14
+		BIC r2,r2,r6
 
-
-        ;will probably need to make use of
-        ; BEQ and BNE
-		
-		
 		
 
 stop	B 	stop
