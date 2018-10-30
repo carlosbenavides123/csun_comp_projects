@@ -1,13 +1,14 @@
 
-	AREA delay, CODE, READONLY
-		EXPORT delayfunc
-delayfunc
+	AREA myDelay, CODE, READONLY
+	EXPORT delayfunc
+
 	; count to 0xffff
-	ldr r0,=0xffff
+	ldr r0,=0x10
 	ldr r1,=0x1
-	
-	cmp r1,r0; r1 == r0?
+	POP	{R0,PC}
+delayfunc
+	cmp r1,r0		; r1 == r0?
 	addne r1,r1,#1
-	bne cmp
-	BX lr
+	bne delayfunc
+	bx lr
 	END
