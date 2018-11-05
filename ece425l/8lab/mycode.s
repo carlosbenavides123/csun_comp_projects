@@ -20,7 +20,7 @@ SRAM_BASE EQU 0x40000000
   LDR r0,=IO0DIR
   STR r1, [r0]
 
-	ldr r4,=0xff00		;task1 goal
+	ldr r4,=0x8000		;task1 goal
 	mov r5, #1    		;initialize 0x100 (led 8)
 	mov r5, r5, LSL#8
 	
@@ -28,19 +28,41 @@ SRAM_BASE EQU 0x40000000
 	
 	; this loop, for int i = 0x100; i<0xff00; i = i*2
 	; r5 is i; r4 is 0xff00
+	
+	;r8 = IO0CLR
+	;r9 = IO0SET
+	;r7 is 2, used for temporary multiplying
+	;r6 is used for multiplying, then used for r5
+	;r5 x 2 => next bit
+	;0x100 x 2 => 0x200...etc
+	
+	ldr r8, = IO0CLR
+	ldr r9, = IO0SET
+	ldr r10, =0xff00
+	
+	;first all leds off
+	str r10,[r9]
+	
 task1
-	PUSH 	{r0,LR}      ;Save values in the stack
+	;store into clr
+	STR r5,[r8]
+	
+	ldr r0, =0xffff
 	BL delayfunc		; go to delay
+	
 	CMP r5,r4			; r5 == r4?
 	BEQ task2			; if true, exit loop
-	mov r2,#2			; set up for multiplacation 
-	mul r1, r0,r2
-	mov r5,r1			;new value for r5
 	
-	; now light up corresponding led
-	; use r6 as clr
-	ldr r6, =IO0CLR ; light up board
-	str r5,[r6]
+	mov r7,#2			; set up for multiplacation 
+	mul r6, r7,r5
+	mov r5,r6			;new value for r5
+	
+	ldr r0, =0xffff
+	BL delayfunc		; go to delay
+	
+	;turn it off
+	str r10,[r9]
+	b task1
 
 	
 task2

@@ -1,14 +1,13 @@
+;GLOBAL user_code
+		AREA armDelay, CODE, Readonly
+		EXPORT delayfunc
+;count to 0xffff
+delayfunc		
+		SUBS r0,r0,#1	;r7=r7-1
+		CMP r0,#0		;check when  r7==0
+		BNE delayfunc
+		
 
-	AREA myDelay, CODE, READONLY
-	EXPORT delayfunc
-
-	; count to 0xffff
-	ldr r0,=0x10
-	ldr r1,=0x1
-	POP	{R0,PC}
-delayfunc
-	cmp r1,r0		; r1 == r0?
-	addne r1,r1,#1
-	bne delayfunc
-	bx lr
-	END
+		BX lr
+stop	B	stop	;endless loop to make program hang
+		END		;assembler directives to indicate the end of code
