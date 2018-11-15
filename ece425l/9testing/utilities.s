@@ -1,15 +1,17 @@
-		AREA utilities, CODE, Readonly
-        IMPORT delay
-        IMPORT LCD_cmd
-		EXPORT Enable
-		EXPORT RS
-		EXPORT RW
-        EXPORT Disable
-        EXPORT LCD_init
-        EXPORT LCD_pins
+	AREA utilities, CODE, Readonly
+	EXPORT init_light
+	EXPORT Enable
+	EXPORT Disable
+	EXPORT RS
+	EXPORT RW
+	EXPORT LCD_cmd
+	EXPORT init_registers
+	IMPORT delay
 
 PINSEL0 EQU 0xE002C000 ;1st, pin fn selection ports   
+PINSEL1		EQU 0XE002C004		;PO.31-16
 PINSEL2 EQU 0xE002C014; for lcd interface, P1.25-P1.16
+IO0PIN		EQU	0XE0028000
 IO0DIR  EQU 0xE0028008 ;2nd, direction
 IO0SET EQU 0xE0028004 ;set
 IO0CLR EQU 0xE002800C ;clear
@@ -21,10 +23,25 @@ LCD_RS      EQU 0x01000000 ; p1.24
 LCD_E       EQU 0x02000000 ; p1.25
 LCD_RW      EQU 0x00400000 ; P0.22
 LCD_LIGHT   EQU 0x40000000 ; P0.30
+	
+init_light
+	push {lr}
+	mov r0, #0x30000000
+	ldr r1, =PINSEL1
+	BIC R0,R1,R0
+	STR r0,[r1]
+	
+	LDR R0,=IO0DIR
+	LDR R1,=LCD_LIGHT
+	STR R1,[R0]
+	
+	LDR r1,=IO0PIN
+	LDR r4,=LCD_LIGHT
+	STR r4,[r1]
+	pop {pc}
 
-;use r5-r19 as EQU 
-
-LCD_pins
+init_registers
+	push {lr}
 
     ;LDR r1, =PINSEL0
     ;LDR r0, [r1] ;read the current contents of PINSEL0
@@ -42,8 +59,17 @@ LCD_pins
     ;make output pins
     ;ldr r1,=0x3fff0000; pin 16 to 30?
     ; maybe this guy
-    ldr r0,=0x00ff3400
+	
+	ldr r1,=PINSEL0
+	mov r0, #0
+	str r0,[r1]
+	
+    ldr r1,=0x00ff3400
     LDR r0,=IO0DIR
+    STR r1, [r0]
+	
+	ldr r1,=0x00ff3400
+    LDR r0,=IO0CLR
     STR r1, [r0]
 
     LDR r5, =LCD_DATA
@@ -51,42 +77,52 @@ LCD_pins
     LDR r7, =LCD_E
     LDR r8, =LCD_RW
     LDR r9, =LCD_LIGHT
-    BX lr
+	pop {pc}
 
-;use r10 as temp val
 
-Enable  ;r7
-    mov r10, #0x1
-    str r10, [r7]
-    BX lr
+LCD_cmd
+	push {lr}
+	;rs = 0
+	mov r10, #0
+	;BL RS
+	;r/w = 0
+	mov r10, #0
+	BL RW
+	;E = 0
+	BL Disable
+	; 6uS delay
+	; pass in r0 as param 
+	ldr r0, =0x7
+	BL delay
+	pop {pc}
+	
 
-RS ;expect data, r0-r3
-    ;rs is r6
-    str r10,[r6]
-    BX lr
-
-RW; expect data, r0-r3
-    ;rw is r8
-    str r10,[r8]
-    BX lr
-
+	
+Enable 
+	push {lr}
+	mov r10,#1
+	str r10,[r7]
+	pop {pc}
+	
 Disable
-    ;Enable is r7
-    mov r10,#0
-    str r10,[r7]
-    BX lr
+	push {lr}
+	mov r10, #0
+	str r10,[r7]
+	pop {pc}
 
-LCD_init
-    mov r1,#1
-    cmp r1,#3
-    beq leave
-    mov r0,#0x30
-    B LCD_cmd
-    addne r1,r1,#1
-    bne LCD_init
-leave 
-	BX lr
+	
+RS ;expect data,r0
+    ;rs is r6
+	push {lr}
+    str r10,[r6]
+    pop {pc}
 
-
-stop	B	stop	;endless loop to make program hang
-		END		;assembler directives to indicate the end of code
+RW; expect data, r0
+    ;rw is r8
+	push {lr}
+    str r10,[r8]
+    pop {pc}
+	
+stop b stop
+	END
+	

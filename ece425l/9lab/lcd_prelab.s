@@ -12,7 +12,7 @@
 LCD_cmd		
 		;expect data r0
 LCD_DATA    EQU 0x00FF0000 ; P1.16 - P1.23
-		push {r5-r9}
+		push {r5-r9,lr}
 		ldr r10, =LCD_DATA
 
 		LDMFD r10,{r1-r9}
