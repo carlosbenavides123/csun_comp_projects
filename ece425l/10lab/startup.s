@@ -84,9 +84,15 @@ IO0DIR 	EQU 0xE0028008	;2nd, direction
 IO0PIN	EQU 0xE0028000	;3rd, GPIO port pin	
 
 	ldr sp,=SVC_Stack_top
-	push {r0-r10}
+	push {r0-r10,lr}
 	sub r0,lr,#4
+	
+	bic r0,r0,#0xff000000
+	ldr r1,=0x255
+	
+	bleq test
 
+	; used for lighting up leds 
 	; r1 = pinsel0 r2 = io0dir r3 = io0pin
 	ldr r1,=PINSEL0
 	ldr r2,=IO0DIR
@@ -95,8 +101,12 @@ IO0PIN	EQU 0xE0028000	;3rd, GPIO port pin
 	mov r4,#0
 	str r4,[r3]
 
-	
+	push {r0-r10}
 
 	
 	movs pc,lr
+	
+test
+	mov r10,#1
+	bx lr
 				END	
