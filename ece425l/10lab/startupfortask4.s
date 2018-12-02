@@ -1,7 +1,7 @@
 Len_SVC_Stack EQU 0x100 
-MODE_SVC  EQU 0x13  ;mode for Supervisor mode
+MODE_SVC  EQU 0x13 
 MODE_USR   EQU 0x10
-I_Bit    EQU 0x80 ; when I bit is set, IRQ is disabled
+I_Bit    EQU 0x80 
 F_Bit    EQU 0x40 
 MODE_IRQ  EQU 0x12
 MODE_FIQ  EQU 0x11
@@ -10,6 +10,12 @@ USR_STACK_SIZE      EQU     0X400
 SVC_STACK_SIZE      EQU     0X100
 IRQ_STACK_SIZE      EQU     0X200
 FIQ_STACK_SIZE      EQU     0X300
+	
+PINSEL0 EQU 0xE002C000 
+IO0DIR  EQU 0xE0028008 
+IO0PIN EQU 0xE0028000 
+EXTINT		EQU		0xE01FC140	;FOR FLAG OF INTERRUPT [1]	
+
  
     AREA reset , CODE, READONLY ;make sure RESET i s capitalized
     ENTRY
@@ -35,8 +41,8 @@ FIQ_Addr   DCD FIQHandler
 ;SWIHandler   B SWIHandler
 PAbtHandler  B PAbtHandler
 DAbtHandler  B DAbtHandler
-IRQHandler   B IRQHandler
-FIQHandler   B FIQHandler
+;IRQHandler   B IRQHandler
+;FIQHandler   B FIQHandler
 UndefHandler  B UndefHandler
 
 Reset_Handler
@@ -48,51 +54,45 @@ Reset_Handler
         LDR             sp, =SRAM + SVC_STACK_SIZE
         MSR             CPSR_c, #MODE_USR
         LDR             sp, =SRAM + USR_STACK_SIZE
-        LDR             pc, =user_code
-
-		LDR				pc, =user_code
-    
+        LDR             pc, =user_code    
 SWIHandler
-PINSEL0 EQU 0xE002C000 ;1st, pin fn selection ports
-IO0DIR  EQU 0xE0028008 ;2nd, direction
-IO0PIN EQU 0xE0028000 ;3rd, GPIO port pin
-	 
-	 ldr sp,=SRAM + SVC_STACK_SIZE
-	 ;subs lr,lr,#4
-	 ;push {r0-r10,lr}
-	 sub r1,lr,#4
-	 ldr r0,[r1]
-	 bic r0,r0,#0xff000000
 
-	 ; for led pins
-	 ldr r1,=PINSEL0
-	 ldr r2,=IO0DIR
-	 ldr r3,=IO0PIN
-	 
-	 mov r4,#0
-	 str r4,[r1]
-	 
-	 mov r4, #0xff00
-	 str r4, [r2]
-	 
-	 ldr r4, =0xF000
-	 ldr r5, =0xFF00
-	 ldr r6,=0xaa00
-	 
-	 cmp r0,#2
-	 
-	 blt	Light0
-	 beq	Light1
-	 bgt 	Light2
-Light0 str	r4,[r3]
-	bx lr
-Light1 str r5,[r3]
-	bx lr
-Light2 str r6,[r3]
-	bx lr
+	
+FIQHandler
+        SUBS lr,lr,#4
+        push {r0-r10,lr}
+		LDR		r0, =PINSEL0
+		LDR		r1, =0X0
+		STR		r1, [r0]
+		LDR		r0, =IO0DIR
+		MOV		r1, #0XFF00
+		STR		r1, [r0]	
+		LDR		r0, =IO0PIN
+		LDR		r1, =0x0F00
+		STR		r1, [r0]
+		
+		LDR		r0, =EXTINT ;clear irq
+		LDR		r1, =0x1
+		STR		r1, [r0]
+        pop {r0-r10,lr}
+		movs pc, lr
 
-
-
+IRQHandler	
+        SUBS lr,lr,#4
+		LDR		r0, =PINSEL0
+		LDR		r1, =0X0
+		STR		r1, [r0]
+		LDR		r0, =IO0DIR
+		MOV		r1, #0XFF00
+		STR		r1, [r0]	
+		LDR		r0, =IO0PIN
+		LDR		r1, =0x0F00
+		STR		r1, [r0]
+		
+		LDR		r0, =EXTINT ;clear irq
+		LDR		r1, =0x1
+		STR		r1, [r0]
+		movs pc, lr
     END 
 
 
