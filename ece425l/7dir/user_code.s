@@ -1,47 +1,84 @@
+			GLOBAL user_code
+			AREA task1, CODE, Readonly
+user_code	;necessary for first line of code
+myprogram
+	B begin
+			;delay
+			LDR r0,=0x40000000		;address
+			LDR r1,=0x0				; r1=temp
+			STR r1,[r0]
+			
+			LDR r3,=0x40000000		;global reg for task 1
+			
+			LDR r2,=0x0				; int i=0
+adding		
+			CMP r2,#5				;check 
+			ADDNE r2,r2,#1			; for int i=0, i++
+			CMP r2,#5
+			BEQ next			;else
+			LDR r4,[r3]
+			ADDS r1,r4,#1
+			ADDS r0,r4,r1	;r0=r0+1
+			
+			STR r0,[r3]
 
-        AREA mydata, DATA, READWRITE 
-sum DCD 0 ; reserve 4 byte for sum 
-;result SPACE 8
+			BNE adding
+next			
+			;task3
+			; load each byte until 0 and read 
+			LDR r9,=0x40000000
+			LDR r10,=0x0
+			STR r10,[r9]
+			
+			LDR r5,=mystring	;string
+s           DCB "s"
+			LDR r4,=s
+			LDRB r1,[r4]
+			ALIGN
+				
+			
+Sloop
+			LDRB r9,[r5],#1		;post index
+			CMP r9,r1			;'s' to string
+			ADDEQ r8,r8,#1		;string inc.
+			STR r8,[r9]
+			
+			CMP r9,#0			;reach to end
+			BEQ stop
+			BNE Sloop
+
 		
-		;sample code from prelab
-        ;LDR r0,=sum; r0=0x4000 0000
-        ;LDR r0, sum; r0 = 0, which is data at memory location
-        ;use debugging tool to verify results of RAM contentns
-		
-NUM 	EQU	0x40000000
-		ldr r7, #0 ; our sum
-		ldr r8, =NUM
-		STR r8, [r7]
-TASK1
-	ldr r0,=NUM
-	ldr r1,[r0]
-	CMP r1,#0
-	ADDS r7,r1,r7
-	SUBS r1,r1,#1
-	BNE TASK1
-
-char		DCB		"T",0
-		ldr r8, =mystring
-		ldr r3, =char
-sumloc 	EQU 0x40000000 ; easy place to see our sum
-		ldr r5, =sumloc
-TASK3
-	;load each byte of mystring until reach 0
-	ldrb r9, [r8]
-	CMP r9,#0 ;reach end of string?
-	BEQ stop
-	CMP r9,r3 ;values the same?
-	ADDEQ r5,r5,#1
+			
+			;task4
+begin
+inst1		EQU	0xFF00AA00	; # of bits:10
+inst2		EQU 0x00112233	; # of bits:8
+inst3		EQU 0xFFFFEEEE	; # of bits:28
 	
 
-TASK4
-	
-	
+			LDR r0,=0x40000000			;counter
+			LDR r1,=0x0
+			STR r1,[r0]
+			
+start
+			LDR r4,=0x0				; int i=0
+			LDR r3,=start
+loop
+			LSL r3,#1
+			ADC r4,r4,#1			; add carry
+			CMP r4,#32				;check
+			
+			
+			ADDS r5,r5,#1		;inti=0
+			BNE loop				;
 
-
-
-;good idea to put strings at end of program
-mystring        DCB     "This is an example of strings",0
-;message         DCB     "Attention please!",0
-        ALIGN
-        END
+			
+			
+			
+			
+			;for task 3
+mystring	DCB	"If you are going to pass, you gotta love this class",0
+			ALIGN
+			
+stop		B	stop	;endless loop to make program hang
+			END		;assembler directives to indicate the end of code

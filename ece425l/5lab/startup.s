@@ -1,7 +1,6 @@
-
-		AREA Reset, CODE, Readonly
-		ENTRY ;first insutrction to execture
-
+        AREA Reset, CODE, Readonly
+        ENTRY ;first insutrction to execture
+		
 VECTORS
         LDR PC,Reset_Addr
         LDR PC,Undef_Addr
