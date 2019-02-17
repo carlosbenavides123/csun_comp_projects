@@ -1,6 +1,6 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /home/carlos/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c28b3bd6050a4639b69db3126d76042d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot ha_tb_behav xil_defaultlib.ha_tb -log elaborate.log 
+Running: /home/carlos/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c28b3bd6050a4639b69db3126d76042d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot unknown_top_behav xil_defaultlib.unknown_top -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,8 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.ha [ha_default]
-Compiling architecture behavioral of entity xil_defaultlib.ha_tb
-Built simulation snapshot ha_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.fa [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.unknown_top
+Built simulation snapshot unknown_top_behav

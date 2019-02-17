@@ -1,43 +1,58 @@
 #-----------------------------------------------------------
 # Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Feb 11 10:10:50 2019
-# Process ID: 7916
-# Current directory: C:/Users/cbb26989/ece420/ca1/ca1.runs/synth_1
-# Command line: vivado.exe -log unknown_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source unknown_top.tcl
-# Log file: C:/Users/cbb26989/ece420/ca1/ca1.runs/synth_1/unknown_top.vds
-# Journal file: C:/Users/cbb26989/ece420/ca1/ca1.runs/synth_1\vivado.jou
+# Start of session at: Sat Feb 16 18:49:29 2019
+# Process ID: 32207
+# Current directory: /home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.runs/synth_1
+# Command line: vivado -log unknown_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source unknown_top.tcl
+# Log file: /home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.runs/synth_1/unknown_top.vds
+# Journal file: /home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source unknown_top.tcl -notrace
-Command: synth_design -top unknown_top -part xc7vx485tffg1157-1
+Command: synth_design -top unknown_top -part xc7k70tfbv676-1
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6652 
+INFO: Helper process launched with PID 32213 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 417.059 ; gain = 96.965
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1268.281 ; gain = 79.898 ; free physical = 6335 ; free virtual = 29468
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'unknown_top' [C:/Users/cbb26989/ece420/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'unknown_top' (1#1) [C:/Users/cbb26989/ece420/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:40]
-WARNING: [Synth 8-3330] design unknown_top has an empty top module
+INFO: [Synth 8-638] synthesizing module 'unknown_top' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:40]
+INFO: [Synth 8-3491] module 'ha' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/ha.vhd:34' bound to instance 'u10' of component 'ha' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'ha' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/ha.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ha' (1#1) [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/ha.vhd:41]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u20' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'fa' (2#1) [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:42]
+INFO: [Synth 8-3491] module 'ha' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/ha.vhd:34' bound to instance 'u21' of component 'ha' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:99]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u30' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:108]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u31' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:112]
+INFO: [Synth 8-3491] module 'ha' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/ha.vhd:34' bound to instance 'u32' of component 'ha' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:116]
+INFO: [Synth 8-3491] module 'ha' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/ha.vhd:34' bound to instance 'u40' of component 'ha' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:124]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u41' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:128]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u42' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:132]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u50' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:140]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u51' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:144]
+INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:34' bound to instance 'u60' of component 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'unknown_top' (3#1) [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/unknown_top.vhd:40]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 472.348 ; gain = 152.254
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.906 ; gain = 124.523 ; free physical = 6348 ; free virtual = 29481
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 472.348 ; gain = 152.254
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.906 ; gain = 124.523 ; free physical = 6347 ; free virtual = 29480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7vx485tffg1157-1
+Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 472.348 ; gain = 152.254
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.910 ; gain = 132.527 ; free physical = 6346 ; free virtual = 29479
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 472.348 ; gain = 152.254
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1328.918 ; gain = 140.535 ; free physical = 6338 ; free virtual = 29471
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -50,6 +65,9 @@ No constraint files found.
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -57,6 +75,14 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module ha 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module fa 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -64,8 +90,8 @@ Finished RTL Hierarchical Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 2800 (col length:140)
-BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -74,9 +100,8 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3330] design unknown_top has an empty top module
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -89,7 +114,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -101,7 +126,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -125,20 +150,23 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net pout_OBUF[1] with 1st driver pin 'i_22/O' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:45]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net pout_OBUF[1] with 2nd driver pin 'i_21/O' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:45]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net pout_OBUF[1] with 3rd driver pin 'i_20/O' [/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.srcs/sources_1/new/fa.vhd:45]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -150,25 +178,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29358
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -181,36 +209,43 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------------+------+
-|      |Cell        |Count |
-+------+------------+------+
-|1     |unknown_top |     1|
-+------+------------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     3|
+|2     |LUT4 |     6|
+|3     |LUT5 |     2|
+|4     |LUT6 |    12|
+|5     |IBUF |     8|
+|6     |OBUF |     8|
++------+-----+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |     0|
+|1     |top      |       |    39|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6226 ; free virtual = 29358
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 745.461 ; gain = 425.367
+Synthesis finished with 0 errors, 3 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.902 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1447.910 ; gain = 259.520 ; free physical = 6227 ; free virtual = 29359
 INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-9 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+27 Infos, 0 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 874.043 ; gain = 566.770
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1545.914 ; gain = 357.633 ; free physical = 6201 ; free virtual = 29332
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/cbb26989/ece420/ca1/ca1.runs/synth_1/unknown_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/carlos/csun/csun_comp_projects/VHDL/ca1/ca1.runs/synth_1/unknown_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file unknown_top_utilization_synth.rpt -pb unknown_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.369 . Memory (MB): peak = 874.043 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 11 10:11:27 2019...
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1569.926 ; gain = 0.000 ; free physical = 6204 ; free virtual = 29335
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 16 18:49:56 2019...

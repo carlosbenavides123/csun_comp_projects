@@ -76,6 +76,8 @@ begin
 -- p0
 sig_p00 <= xin(0) and yin(0);
 
+pout(0) <= sig_p00;
+
 -- p1
 sig_p10 <= xin(1) and yin(0);
 sig_p11 <= xin(0) and yin(1);
@@ -83,6 +85,8 @@ s10 <= sig_p10 and sig_p11;
 c10 <= sig_p10 and sig_p11;
 
 u10: ha port map(a => sig_p10, b => sig_p11, sum => s10, cout => s10);
+
+pout(1) <= s10;
 
 -- p2
 sig_p20 <= xin(2) and yin(0);
@@ -93,6 +97,8 @@ u20: fa port map(a => sig_p20, b => sig_p21, cin => c10, sum => s11, cout => c11
 sig_p22 <= xin(0) and yin(2);
 
 u21: ha port map(a => sig_p22, b => s11, sum => s20, cout => c20);
+
+pout(2) <= s20;
 
 --p3
 
@@ -109,6 +115,8 @@ sig_p33 <= xin(0) and yin(3);
 
 u32: ha port map(a => s21, b => sig_p33, sum => s30, cout => c30);
 
+pout(3) <= s30;
+
 --p4
 
 sig_p40 <= xin(3) and yin(1);
@@ -123,6 +131,8 @@ sig_p42 <= xin(1) and yin(3);
 
 u42: fa port map ( a => sig_p42, b => s22, cin => c30, sum => s31, cout => c31 );
 
+pout(4) <= s31;
+
 --p5
 
 sig_p50 <= xin(3) and yin(2);
@@ -133,16 +143,20 @@ sig_p51 <= xin(2) and yin(3);
 
 u51: fa port map ( a => sig_p51, b => s23, cin => c31, sum => s32, cout => c32 );
 
+pout(5) <= s32;
+
 -- p6
 
 sig_p60 <= xin(3) and yin(3);
 
 u60: fa port map ( a => sig_p60, b => c23, cin => c32, sum => s33, cout => c33 );
 
+pout(6) <= s33;
+
+
 -- p7
 
-
-
+pout(7) <= c33;
 
 
 --u00: ha port map(a => a_sig, b => b_sig, cin => cin_sig, sum => sum_sig, cout => cout_sig);
