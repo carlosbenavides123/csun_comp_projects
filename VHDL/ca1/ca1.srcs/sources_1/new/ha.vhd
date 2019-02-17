@@ -39,8 +39,7 @@ entity ha is
 end ha;
 
 architecture behavioral of ha is
-
-begin
-
-
-end behavioral;
+    begin 
+        sum <= (a xor b);
+        cout <= a and b;
+    end behavioral;
