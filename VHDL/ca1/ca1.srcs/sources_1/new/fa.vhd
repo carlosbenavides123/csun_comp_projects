@@ -39,10 +39,10 @@ entity fa is
            cout : out STD_LOGIC);
 end fa;
 
-architecture behavioral of fa is
+architecture Behavioral of fa is
 
 begin
 sum <= a xor b xor cin;
 cout <= (a and b) or (a and cin) or (b and cin);
 
-end behavioral;
+end Behavioral;
