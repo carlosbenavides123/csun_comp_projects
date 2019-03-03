@@ -59,8 +59,8 @@ xin_sig <= "0011";
 yin_sig <= "0111";
 wait for 10ns;
 
-xin_sig <= "1111";
-yin_sig <= "1111";
+xin_sig <= "1101";
+yin_sig <= "1011";
 wait for 10ns;
 
 xin_sig <= "0011";
