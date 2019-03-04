@@ -38,8 +38,8 @@ entity ha is
            cout : out STD_LOGIC);
 end ha;
 
-architecture behavioral of ha is
-    begin 
-        sum <= (a xor b);
-        cout <= a and b;
-    end behavioral;
+architecture Behavioral of ha is
+begin 
+    sum <= (a xor b);
+    cout <= a and b;
+end Behavioral;

@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 02/11/2019 09:49:53 AM
+-- Create Date: 02/11/2019 09:49:29 AM
 -- Design Name: 
--- Module Name: unknown_top - behavioral
+-- Module Name: unkown_top - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -37,10 +37,8 @@ entity unknown_top is
            pout : out STD_LOGIC_VECTOR (7 downto 0));
 end unknown_top;
 
-architecture behavioral of unknown_top is
--- declaration part
--- components, signals
--- aka parameters 
+architecture Behavioral of unknown_top is
+
 component fa is
     Port ( a : in STD_LOGIC;
            b : in STD_LOGIC;
@@ -49,7 +47,6 @@ component fa is
            cout : out STD_LOGIC);
 end component fa;
 
--- TODO, make half adder
 component ha is
     Port ( a : in STD_LOGIC;
            b : in STD_LOGIC;
@@ -57,8 +54,7 @@ component ha is
            cout : out STD_LOGIC);
 end component ha;
 
-
-signal sig_p00, sig_p10, sig_p11, sig_p20, sig_p21, sig_p22, sig_p23: std_logic;
+signal sig_p00, sig_p10, sig_p11, sig_p20, sig_p21, sig_p22 : std_logic;
 signal sig_p30, sig_p31, sig_p32, sig_p33, sig_p40, sig_p41, sig_p42: std_logic;
 signal sig_p50, sig_p51, sig_p52, sig_p53, sig_p60, sig_p61, sig_p62: std_logic;
 
@@ -71,98 +67,63 @@ signal s40, s41, s42, s50, s51, s60: std_logic;
 
 begin
 
--- top level from right to left
-
 -- p0
 sig_p00 <= xin(0) and yin(0);
-
 pout(0) <= sig_p00;
 
 -- p1
 sig_p10 <= xin(1) and yin(0);
 sig_p11 <= xin(0) and yin(1);
-s10 <= sig_p10 and sig_p11;
-c10 <= sig_p10 and sig_p11;
-
-u10: ha port map(a => sig_p10, b => sig_p11, sum => s10, cout => s10);
-
+u00: ha port map(a => sig_p10, b => sig_p11, sum => s10, cout => c10);
 pout(1) <= s10;
 
--- p2
+
+--p2
 sig_p20 <= xin(2) and yin(0);
 sig_p21 <= xin(1) and yin(1);
-
-u20: fa port map(a => sig_p20, b => sig_p21, cin => c10, sum => s11, cout => c11);
-
+u01: fa port map(a => sig_p20, b => sig_p21, cin => c10, sum => s11, cout => c11);
 sig_p22 <= xin(0) and yin(2);
-
-u21: ha port map(a => sig_p22, b => s11, sum => s20, cout => c20);
-
+u10: ha port map(a => sig_p22, b => s11, sum => s20, cout => c20);
 pout(2) <= s20;
+
 
 --p3
 
-sig_p30 <= xin(3) and yin(0);
-sig_p31 <= xin(2) and yin(1);
-
-u30: fa port map(a => sig_p30, b => sig_p31, cin => c11, sum => s12, cout => c12);
-
+sig_p30 <= xin(2) and yin(1);
+sig_p31 <= xin(3) and yin(0);
+u02: fa port map(a => sig_p30, b => sig_p31, cin => c11, sum => s12, cout => c12);
 sig_p32 <= xin(1) and yin(2);
-
-u31: fa port map(a => s12, b => sig_p32, cin => c20, sum => s21, cout => c21);
-
+u11: fa port map(a => sig_p32, b => s12, cin => c20, sum => s21, cout => c21);
 sig_p33 <= xin(0) and yin(3);
-
-u32: ha port map(a => s21, b => sig_p33, sum => s30, cout => c30);
-
+u20: ha port map(a => sig_p33, b => s21, sum => s30, cout => c30);
 pout(3) <= s30;
 
+
 --p4
-
 sig_p40 <= xin(3) and yin(1);
-
-u40: ha port map( a => c12, b => sig_p40, sum => s13, cout => c13 );
-
+u03: ha port map(a => sig_p40, b=> c12, sum => s13, cout => c13);
 sig_p41 <= xin(2) and yin(2);
-
-u41: fa port map ( a => sig_p41, b => s13, cin => c21, sum => s22, cout => c22 );
-
+u12: fa port map(a => sig_p41, b => s13, cin => c21, sum => s22, cout => c22);
 sig_p42 <= xin(1) and yin(3);
-
-u42: fa port map ( a => sig_p42, b => s22, cin => c30, sum => s31, cout => c31 );
-
+u21: fa port map(a => sig_p42, b => s22, cin => c30, sum => s31, cout => c31);
 pout(4) <= s31;
 
+
 --p5
-
 sig_p50 <= xin(3) and yin(2);
-
-u50: fa port map ( a => sig_p50, b => c13, cin => c22, sum => s23, cout => c23 );
-
+u13: fa port map(a => sig_p50, b => c13, cin => c22, sum => s23, cout => c23);
 sig_p51 <= xin(2) and yin(3);
-
-u51: fa port map ( a => sig_p51, b => s23, cin => c31, sum => s32, cout => c32 );
-
+u22: fa port map(a => sig_p51, b => s23, cin => c31, sum => s32, cout => c32);
 pout(5) <= s32;
 
--- p6
-
+--p6
 sig_p60 <= xin(3) and yin(3);
-
-u60: fa port map ( a => sig_p60, b => c23, cin => c32, sum => s33, cout => c33 );
-
+u23: fa port map(a => sig_p60, b => c23, cin => c32, sum => s33, cout => c33);
 pout(6) <= s33;
 
-
--- p7
-
+--p7
 pout(7) <= c33;
 
+--u03: ha port map(a =>a_sig, b=>b_sig, cin=>cin_sig, sum =>sum_sig, cout =>cout_sig);
 
---u00: ha port map(a => a_sig, b => b_sig, cin => cin_sig, sum => sum_sig, cout => cout_sig);
---u01: fa port map(a => and2, b => sig1, cin => c11, sum => s12, cout => c12);
---u02: fa port map(a => a_sig, b => b_sig, cin => cin_sig, sum => sum_sig, cout => cout_sig);
---u03: ha port map(a => a_sig, b => b_sig, cin => cin_sig, sum => sum_sig, cout => cout_sig);
-
-
-end behavioral;
+end Behavioral;

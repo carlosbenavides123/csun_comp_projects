@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1550371767">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1550462750">
   <File Type="VDS-TIMING-PB" Name="unknown_top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="unknown_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="unknown_top.dcp"/>
@@ -25,13 +25,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/unknown_top.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ha_2.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
