@@ -6,3 +6,146 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VH
 INFO: [VRFC 10-307] analyzing entity subtractor_tb
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/subtractor.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity subtractor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sim_1/new/divider_main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sim_1/new/divider_main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sim_1/new/divider_main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sim_1/new/divider_main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sim_1/new/divider_main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+ERROR: [VRFC 10-1412] syntax error near ) [/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd:47]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd:36]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca2/project_1/project_1.srcs/sources_1/new/divider_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity divider_main

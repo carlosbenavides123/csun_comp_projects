@@ -1,6 +1,6 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /home/carlos/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto da2ba848408a46618b79d1293577f761 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot subtractor_tb_behav xil_defaultlib.subtractor_tb -log elaborate.log 
+Running: /home/carlos/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto da2ba848408a46618b79d1293577f761 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot divider_main_tb_behav xil_defaultlib.divider_main_tb -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,7 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.subtractor [subtractor_default]
-Compiling architecture behavioral of entity xil_defaultlib.subtractor_tb
-Built simulation snapshot subtractor_tb_behav
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.divider_main [divider_main_default]
+Compiling architecture behavioral of entity xil_defaultlib.divider_main_tb
+Built simulation snapshot divider_main_tb_behav

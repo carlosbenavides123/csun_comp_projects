@@ -22,69 +22,45 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use STD.textio.all;                     -- basic I/O
+use IEEE.std_logic_textio.all;          -- I/O for logic types
 
 entity divider_main is
     port(
-            dividend:	in	std_logic_vector(7	downto	0);	
-            remainder:	out std_logic_vector(5	downto	0);	
-            quotient:	out	std_logic_vector(2	downto	0)
+            dividend: in std_logic_vector(7 downto 0);
+            remainder: out std_logic_vector(5 downto 0);	
+            quotient: out std_logic_vector(2 downto 0)
          );	
 end divider_main;
 
 architecture Behavioral of divider_main is
 
-signal SEL: STD_LOGIC;
-signal quotient_signal: unsigned(2 downto 0);
-
--- for subtractor
-signal input_signal, const_signal: std_logic_vector(7 downto 0);
-signal res_signal: std_logic_vector(7 downto 0);
-
-component subtractor  is
-    port( 
-            input: in STD_LOGIC;
-            const: in STD_LOGIC;
-            res: out STD_LOGIC
-        );
-end component subtractor;
-
-component mux is
-    Port( 
-        SEL: in STD_LOGIC;
-        A: in STD_LOGIC;
-        B: in STD_LOGIC;
-        X: out STD_LOGIC
-       );
-end component mux;
+signal dividend_signal: signed(7 downto 0);
+signal remainder_signal: std_logic_vector(5 downto 0);
+signal fifty_three: signed(7 downto 0);
 signal count: unsigned(2 downto 0);
-signal test: signed(7 downto 0);
-signal te: std_logic_vector(5 downto 0);
+
 begin
---      u00: subtractor port a(input_signal => input, const_signal => const, res_signal => res);
-
---    process(SEL, dividend) is begin
---        if SEL = '1' then
---        else
---            quotient_signal <= quotient_signal + 1;
-test <= signed(dividend);
-
-    process(test) is begin
-        if signed(test) < 00000101 then
-            for i in te'range loop
-                te(i) <= test(i);
-            end loop;
-            remainder <= te;
---            remainder <= std_logic_vector(test);
+    dividend_signal <= signed(dividend);
+    fifty_three <= "00011101";
+    count <= "000";
+    process(dividend, dividend_signal) is 
+        begin
+        if dividend_signal < fifty_three then
+            remainder(5 downto 0) <= std_logic_vector(dividend_signal(5 downto 0));
             quotient <= std_logic_vector(count);
+            dividend_signal <= "00000000";
+            count(2 downto 0) <= "000";
         else
             count <= count + 1;
-            test <= signed(test) - 5;
+            dividend_signal <= dividend_signal - fifty_three;
+            quotient(2 downto 0) <= "000";
+            remainder <= "000000";
         end if;
     end process;
-
 end Behavioral;
+--            write(my_line, std_logic_vector(count(2 downto 0)));   -- formatting
+--writeline(output, my_line);
+--        variable sttr : line;
+--file dataout : text open write_mode is "abc";
+--        variable my_line : line;  -- type 'line' comes from textio
