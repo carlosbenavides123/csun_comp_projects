@@ -48,6 +48,14 @@ component sr is
            rst : in STD_LOGIC);
 end component sr;
 
+component dff is 
+    port ( d: in STD_LOGIC;
+           q: in STD_LOGIC;
+           clk: in STD_LOGIC;
+           rst: in STD_LOGIC
+           )
+end component;
+
 signal xi, yi, si: std_logic;
 
 begin
