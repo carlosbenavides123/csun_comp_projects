@@ -39,18 +39,18 @@ architecture Behavioral of sa_top_tb is
 
 component sa_top is
       port( 
-          x:      in STD_LOGIC_VECTOR(7 downto 0);
-          y:      in STD_LOGIC_VECTOR(7 downto 0);
-          clk:    in STD_LOGIC;
-          rst:    in STD_LOGIC;
-          s:      out STD_LOGIC_VECTOR(10 downto 0)
+            x:      in STD_LOGIC_VECTOR(7 downto 0);
+            y:      in STD_LOGIC_VECTOR(7 downto 0);
+            clk:    in STD_LOGIC;
+            rst:    in STD_LOGIC;
+            s:      out STD_LOGIC_VECTOR(7 downto 0)
          );
 end component sa_top;
 
 constant CP: time := 10 ns;
 signal xin_sig, yin_sig: std_logic_vector(7 downto 0);
 signal clk_sig, rst_sig: std_logic := '0';
-signal sin_ou: std_logic_vector(10 downto 0);
+signal sin_ou: std_logic_vector(7 downto 0);
 
 begin
 uut: sa_top port map(x => xin_sig, y => yin_sig, clk => clk_sig, rst => rst_sig, s => sin_ou);

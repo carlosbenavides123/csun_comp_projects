@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Mar 16 23:03:03 2019
-# Process ID: 28083
+# Start of session at: Sun Mar 17 10:23:19 2019
+# Process ID: 14856
 # Current directory: /home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.runs/synth_1
 # Command line: vivado -log sa_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sa_top.tcl
 # Log file: /home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.runs/synth_1/sa_top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28090 
+INFO: Helper process launched with PID 14861 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1268.277 ; gain = 79.895 ; free physical = 5009 ; free virtual = 29546
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1268.281 ; gain = 79.895 ; free physical = 6050 ; free virtual = 29347
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'sa_top' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:44]
 INFO: [Synth 8-3491] module 'sr' declared at '/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sr.vhd:34' bound to instance 'inp_x_instance' of component 'sr' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:83]
@@ -29,8 +29,6 @@ INFO: [Synth 8-3491] module 'fa' declared at '/home/carlos/csun/csun_comp_projec
 INFO: [Synth 8-638] synthesizing module 'fa' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'fa' (2#1) [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:44]
 WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:90]
-WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:90]
-WARNING: [Synth 8-614] signal 'y' is read in the process but is not in the sensitivity list [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:90]
 INFO: [Synth 8-256] done synthesizing module 'sa_top' (3#1) [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:44]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[7]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[6]
@@ -39,6 +37,7 @@ WARNING: [Synth 8-3331] design sa_top has unconnected port x[4]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[3]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[2]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[1]
+WARNING: [Synth 8-3331] design sa_top has unconnected port x[0]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[7]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[6]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[5]
@@ -46,11 +45,12 @@ WARNING: [Synth 8-3331] design sa_top has unconnected port y[4]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[3]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[2]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[1]
+WARNING: [Synth 8-3331] design sa_top has unconnected port y[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.902 ; gain = 124.520 ; free physical = 5025 ; free virtual = 29562
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.906 ; gain = 124.520 ; free physical = 6064 ; free virtual = 29360
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.902 ; gain = 124.520 ; free physical = 5023 ; free virtual = 29561
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.906 ; gain = 124.520 ; free physical = 6063 ; free virtual = 29359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -58,12 +58,15 @@ Start Loading Part and Timing Information
 Loading part: xc7k70tfbv676-1
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.906 ; gain = 132.523 ; free physical = 5024 ; free virtual = 29561
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.910 ; gain = 132.523 ; free physical = 6062 ; free virtual = 29359
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 's_reg' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:93]
 WARNING: [Synth 8-327] inferring latch for variable 's_temp_reg' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'xi_reg' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:83]
+WARNING: [Synth 8-327] inferring latch for variable 'yi_reg' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'carry_reg' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/sa_top.vhd:87]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1328.914 ; gain = 140.531 ; free physical = 5016 ; free virtual = 29553
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1328.918 ; gain = 140.531 ; free physical = 6054 ; free virtual = 29350
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -126,6 +129,7 @@ WARNING: [Synth 8-3331] design sa_top has unconnected port x[4]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[3]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[2]
 WARNING: [Synth 8-3331] design sa_top has unconnected port x[1]
+WARNING: [Synth 8-3331] design sa_top has unconnected port x[0]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[7]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[6]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[5]
@@ -133,6 +137,7 @@ WARNING: [Synth 8-3331] design sa_top has unconnected port y[4]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[3]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[2]
 WARNING: [Synth 8-3331] design sa_top has unconnected port y[1]
+WARNING: [Synth 8-3331] design sa_top has unconnected port y[0]
 INFO: [Synth 8-3886] merging instance 's_reg[1]' (LD) to 's_reg[10]'
 INFO: [Synth 8-3886] merging instance 's_reg[2]' (LD) to 's_reg[10]'
 INFO: [Synth 8-3886] merging instance 's_reg[3]' (LD) to 's_reg[10]'
@@ -144,10 +149,11 @@ INFO: [Synth 8-3886] merging instance 's_reg[8]' (LD) to 's_reg[10]'
 INFO: [Synth 8-3886] merging instance 's_reg[9]' (LD) to 's_reg[10]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_reg[10] )
 WARNING: [Synth 8-3332] Sequential element (s_reg[10]) is unused and will be removed from module sa_top.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (s_temp_reg)
-WARNING: [Synth 8-3332] Sequential element (s_temp_reg) is unused and will be removed from module sa_top.
+INFO: [Synth 8-3886] merging instance 's_temp_reg' (LD) to 'carry_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (carry_reg)
+WARNING: [Synth 8-3332] Sequential element (carry_reg) is unused and will be removed from module sa_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4863 ; free virtual = 29402
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5901 ; free virtual = 29199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -160,7 +166,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29402
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -187,11 +193,16 @@ WARNING: [Synth 8-3332] Sequential element (inp_y_instance/tmp_sig_reg[3]) is un
 WARNING: [Synth 8-3332] Sequential element (inp_y_instance/tmp_sig_reg[2]) is unused and will be removed from module sa_top.
 WARNING: [Synth 8-3332] Sequential element (inp_y_instance/tmp_sig_reg[1]) is unused and will be removed from module sa_top.
 WARNING: [Synth 8-3332] Sequential element (inp_y_instance/tmp_sig_reg[0]) is unused and will be removed from module sa_top.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net sum with 1st driver pin 'adder_instace/i_0/O' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:47]
+WARNING: [Synth 8-3332] Sequential element (xi_reg) is unused and will be removed from module sa_top.
+WARNING: [Synth 8-3332] Sequential element (yi_reg) is unused and will be removed from module sa_top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net sum with 1st driver pin 'adder_instace/sum/O' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:47]
 CRITICAL WARNING: [Synth 8-3352] multi-driven net sum with 2nd driver pin 'GND' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:47]
 CRITICAL WARNING: [Synth 8-5559] multi-driven net sum is connected to constant driver, other driver is ignored [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:47]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 1st driver pin 'adder_instace/cout__0/O' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 2nd driver pin 'GND' [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net cout is connected to constant driver, other driver is ignored [/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sources_1/new/fa.vhd:48]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -215,7 +226,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -228,7 +239,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,25 +251,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -284,11 +295,11 @@ Report Instance Areas:
 |1     |top      |       |    11|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4862 ; free virtual = 29401
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5900 ; free virtual = 29198
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 3 critical warnings and 52 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.859 ; gain = 248.477 ; free physical = 4863 ; free virtual = 29403
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1436.867 ; gain = 248.477 ; free physical = 4863 ; free virtual = 29403
+Synthesis finished with 0 errors, 6 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1437.879 ; gain = 249.492 ; free physical = 5901 ; free virtual = 29200
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1437.887 ; gain = 249.492 ; free physical = 5901 ; free virtual = 29200
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -296,11 +307,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-28 Infos, 52 Warnings, 3 Critical Warnings and 0 Errors encountered.
+29 Infos, 59 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1522.891 ; gain = 334.613 ; free physical = 4834 ; free virtual = 29374
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1521.902 ; gain = 333.621 ; free physical = 5872 ; free virtual = 29171
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.runs/synth_1/sa_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file sa_top_utilization_synth.rpt -pb sa_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1546.902 ; gain = 0.000 ; free physical = 4835 ; free virtual = 29374
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 16 23:03:31 2019...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1545.914 ; gain = 0.000 ; free physical = 5873 ; free virtual = 29171
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 17 10:23:48 2019...

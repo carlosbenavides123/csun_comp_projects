@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Sat Mar 16 23:04:34 2019
+| Date         : Sun Mar 17 10:26:23 2019
 | Host         : carlos-MS-7994 running 64-bit Ubuntu 18.04.2 LTS
 | Command      : report_timing_summary -max_paths 10 -file sa_top_timing_summary_routed.rpt -pb sa_top_timing_summary_routed.pb -rpx sa_top_timing_summary_routed.rpx -warn_on_violation
 | Design       : sa_top

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1552802617">
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1552843522">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="sa_top.drc"/>
   <File Type="BG-BGN" Name="sa_top.bgn"/>
@@ -15,7 +15,6 @@
   <File Type="BG-BIT" Name="sa_top.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sa_top_bus_skew_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sa_top_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sa_top_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="sa_top.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sa_top_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sa_top_timing_summary_postroute_physopted.pb"/>
@@ -69,6 +68,8 @@
   <File Type="REPORTS-TCL" Name="sa_top_reports.tcl"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="sa_top_bus_skew_routed.pb"/>
   <File Type="PA-TCL" Name="sa_top.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sa_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="PA-DCP" Name="sa_top.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/fa.vhd">
@@ -109,9 +110,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

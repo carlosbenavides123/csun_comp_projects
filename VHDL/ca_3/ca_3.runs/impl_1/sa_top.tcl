@@ -67,16 +67,13 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-20037-carlos-MS-7994/incrSyn
-  create_project -in_memory -part xc7k70tfbv676-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-8888-carlos-MS-7994/incrSyn
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint /home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.runs/impl_1/sa_top.dcp
   set_property webtalk.parent_dir /home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.cache/wt [current_project]
   set_property parent.project_path /home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.xpr [current_project]
   set_property ip_output_repo /home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.runs/synth_1/sa_top.dcp
-  link_design -top sa_top -part xc7k70tfbv676-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

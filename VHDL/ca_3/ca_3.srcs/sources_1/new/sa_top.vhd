@@ -37,7 +37,7 @@ entity sa_top is
         y:      in STD_LOGIC_VECTOR(7 downto 0);
         clk:    in STD_LOGIC;
         rst:    in STD_LOGIC;
-        s:      out STD_LOGIC_VECTOR(10 downto 0)
+        s:      out STD_LOGIC_VECTOR(7 downto 0)
        );
 end sa_top;
 
@@ -75,30 +75,32 @@ component fa is
 end component fa;
 
 signal xi, yi, si: std_logic;
+signal xo, yo, so: std_logic;
+
+
 signal s_temp: std_logic;
 signal carry: std_logic;
 
 begin
+xi <= x(0);
+yi <= y(0);
 
-inp_x_instance:  sr port map(sin => xi, sout => xi, clk => clk, rst => rst);
-inp_y_instance:  sr port map(sin => yi, sout => yi, clk => clk, rst => rst);
+
+inp_x_instance:  sr port map(sin => xi, sout => xo, clk => clk, rst => rst);
+inp_y_instance:  sr port map(sin => yi, sout => yo, clk => clk, rst => rst);
+
+adder_instace:   fa port map(a => xo, b=> yo, cin => carry, sum => s_temp, cout => carry);
+
 op_s_instance:   sr port map(sin => s_temp, sout => si, clk => clk, rst => rst);
 
-adder_instace: fa port map(a => xi, b=> yi, cin => carry, sum => s_temp, cout => carry);
 --df_instance: dff port map(d => s_temp, q => s_temp, clk => clk, rst => rst);
 
     process(clk, s_temp, carry) is
     begin
         if rst = '1' then
             s <= (others=>'0');
-            s_temp <= '0';
-            carry <= '0';
-            xi <= '0';
-            yi <= '0';
-            si <= '0';
         else
-            
-            s(0) <= s_temp;
+            s <= ( si & "0000000");
          end if;
     end process;
 end Behavioral;
