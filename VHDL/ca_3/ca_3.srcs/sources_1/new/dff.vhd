@@ -32,22 +32,23 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity dff is
-    port( d:in STD_LOGIC;
-    q:out std_LOGIC;
-    clk:in STD_LOGIC;
-    rst:in STD_LOGIC
-    );
+    port(
+            d:in STD_LOGIC;
+            q:out std_LOGIC;
+            clk:in STD_LOGIC;
+            rst:in STD_LOGIC
+         );
 end dff;
 
 architecture Behavioral of dff is
 
 begin
-process (clk)
-begin
-if (rst = '1') then
-    q <= '0';
-elsif rising_edge(clk) then
-    q <= d;
- end if;
-end process;
+    process (clk)
+    begin
+        if (rst = '1') then
+            q <= '0';
+        elsif rising_edge(clk) then
+            q <= d;
+         end if;
+    end process;
 end Behavioral;

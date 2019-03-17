@@ -53,11 +53,11 @@ uut: sr port map(sin => sin_sig, sout => sout_sig, clk => clk_sig, rst => rst_si
 
 -- clock signal test
 process
-begin
-clk_sig <= '1';
-wait for CP/2;
-clk_sig <= '0';
-wait for CP/2;
+    begin
+    clk_sig <= '1';
+    wait for CP/2;
+    clk_sig <= '0';
+    wait for CP/2;
 end process;
 
 -- reset signal test

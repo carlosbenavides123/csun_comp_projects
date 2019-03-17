@@ -1,1 +1,1 @@
--wto "bd41c8a10f544259b377ef0e443d2024" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sr_tb_behav" "xil_defaultlib.sr_tb" -log "elaborate.log" 
+-wto "bd41c8a10f544259b377ef0e443d2024" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "sr_tb_behav" "xil_defaultlib.sr_tb" -log "elaborate.log" 

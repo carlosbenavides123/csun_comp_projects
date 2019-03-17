@@ -32,10 +32,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity sr is
-    port ( sin : in STD_LOGIC;
+    port( 
+           sin : in STD_LOGIC;
            sout : out STD_LOGIC;
            clk : in STD_LOGIC;
-           rst : in STD_LOGIC);
+           rst : in STD_LOGIC
+        );
 end sr;
 
 architecture Behavioral of sr is
@@ -58,8 +60,7 @@ begin
       end if;
    end if;
 end process;
-sout <= tmp_sig(WIDTH-1);
 
-					
+sout <= tmp_sig(WIDTH-1);
 
 end Behavioral;
