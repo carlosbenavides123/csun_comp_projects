@@ -89,18 +89,18 @@ yi <= y(0);
 inp_x_instance:  sr port map(sin => xi, sout => xo, clk => clk, rst => rst);
 inp_y_instance:  sr port map(sin => yi, sout => yo, clk => clk, rst => rst);
 
-adder_instace:   fa port map(a => xo, b=> yo, cin => carry, sum => s_temp, cout => carry);
+adder_instace:   fa port map(a => xo, b=> yo, cin => carry, sum => si, cout => carry);
 
-op_s_instance:   sr port map(sin => s_temp, sout => si, clk => clk, rst => rst);
+op_s_instance:   sr port map(sin => si, sout => so, clk => clk, rst => rst);
 
 --df_instance: dff port map(d => s_temp, q => s_temp, clk => clk, rst => rst);
 
-    process(clk, s_temp, carry) is
+    process(clk, s_temp) is
     begin
         if rst = '1' then
             s <= (others=>'0');
-        else
-            s <= ( si & "0000000");
+        elsif rising_edge(clk) then
+            s(0) <= so;
          end if;
     end process;
 end Behavioral;
