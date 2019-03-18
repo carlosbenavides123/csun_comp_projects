@@ -31,23 +31,23 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity sr is
+entity op_sr is
     port( 
-           sin : in STD_LOGIC_VECTOR(7 downto 0);
-           sout : out std_logic;
+           sin : in STD_LOGIC;
+           sout : out std_logic_vector(7 downto 0);
            clk : in STD_LOGIC;
            rst : in STD_LOGIC
         );
-end sr;
+end op_sr;
 
-architecture Behavioral of sr is
+architecture Behavioral of op_sr is
 
 constant WIDTH: integer := 8;
 signal tmp_sig: std_logic_vector(WIDTH-1 downto 0);
 signal tmp_top: std_logic;
 begin
 
-process (clk, tmp_top, tmp_sig)
+process (clk, tmp_sig, sin)
 
 function to_string ( a: std_logic_vector) return string is
 variable b : string (1 to a'length) := (others => NUL);
@@ -66,26 +66,26 @@ variable O:std_logic_vector(0 to 0):=(0=>i);
 begin 
 return (0 => i);
 end function ToSLV;
-begin
 
-tmp_sig(7 downto 0) <= sin(7 downto 0);
+
+begin
+--report to_string(ToSLV(sin));
+tmp_sig(7 downto 0) <= (others => '0');
 
    if (rising_edge(clk)) then
       if rst ='1' then
          tmp_sig <= (others => '0');
       else
-      tmp_top <= tmp_sig(7);
          for i in 0 to WIDTH-2 loop
             tmp_sig(i+1) <= tmp_sig(i);
          end loop;
-         tmp_sig(0) <= tmp_top;
       end if;
    end if;
---   report to_string(tmp_sig);
---   report to_string(ToSLV(tmp_top));
+   tmp_sig(0) <= sin;
+   report to_string(tmp_sig);
 
 end process;
 
-sout <= tmp_top;
+sout <= tmp_sig;
 
 end Behavioral;

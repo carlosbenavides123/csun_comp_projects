@@ -50,29 +50,61 @@ end component sa_top;
 constant CP: time := 10 ns;
 signal xin_sig, yin_sig: std_logic_vector(7 downto 0);
 signal clk_sig, rst_sig: std_logic := '0';
-signal s_op: std_logic_vector(7 downto 0);
+signal s_op: STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 uut: sa_top port map(x => xin_sig, y => yin_sig, clk => clk_sig, rst => rst_sig, s => s_op);
-
+xin_sig <= "10101000";
+yin_sig <= "10001000";
 -- clock signal test
 process
 begin
     clk_sig <= '1';
-    wait for CP/2;
+    wait for CP;
     clk_sig <= '0';
-    wait for CP/2;
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
+    clk_sig <= '1';
+    wait for CP;
+    clk_sig <= '0';
+    wait for CP;
 end process;
 
--- reset signal test
-process
-begin
-    xin_sig <= "10101000";
-    yin_sig <= "10001000";
-    rst_sig <= '1';
-    wait for CP;
-    rst_sig <= '0';
-    wait;
-end process;
+---- reset signal test
+--process
+--begin
+
+--    rst_sig <= '1';
+--    wait for CP;
+--    rst_sig <= '0';
+--    wait;
+--end process;
 
 end Behavioral;

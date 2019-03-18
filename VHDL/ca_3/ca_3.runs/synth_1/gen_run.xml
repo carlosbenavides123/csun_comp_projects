@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1552843397">
-  <File Type="VDS-TIMING-PB" Name="sa_top_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="sa_top_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1552888593">
+  <File Type="PA-TCL" Name="sa_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="sa_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sa_top.vds"/>
   <File Type="RDS-DCP" Name="sa_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="sa_top_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="sa_top_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="sa_top_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="sa_top.vds"/>
-  <File Type="REPORTS-TCL" Name="sa_top_reports.tcl"/>
-  <File Type="PA-TCL" Name="sa_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/fa.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/sr.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -29,9 +20,23 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/fa.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/dff.vhd">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/op_sr.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
