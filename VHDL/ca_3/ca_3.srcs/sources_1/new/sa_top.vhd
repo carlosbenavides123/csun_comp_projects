@@ -33,106 +33,46 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity sa_top is
   port( 
-        x:      in STD_LOGIC_VECTOR(7 downto 0);
-        y:      in STD_LOGIC_VECTOR(7 downto 0);
-        clk:    in STD_LOGIC;
-        rst:    in STD_LOGIC;
-        s:      out STD_LOGIC_VECTOR(7 downto 0)
+        x, y:        in STD_LOGIC;
+        clk, rst:    in STD_LOGIC;
+        s:           out std_logic
        );
 end sa_top;
 
 architecture Behavioral of sa_top is
 
--- shift register
 component sr is
-    port( 
-          sin:  in STD_LOGIC_VECTOR(7 downto 0);
-          sout: out STD_LOGIC;
-          clk:  in STD_LOGIC;
-          rst:  in STD_LOGIC
+    port(
+            sin, rst, clk:  in std_logic;
+            sout:           out std_logic
          );
-end component sr;
+end component;
 
--- shift register
-component op_sr is
-    port( 
-          sin:  in STD_LOGIC;
-          sout: out STD_LOGIC_VECTOR(7 downto 0);
-          clk:  in STD_LOGIC;
-          rst:  in STD_LOGIC
-         );
-end component op_sr;
-
--- d flip/flop
-component dff is 
-    port( 
-           d:   in STD_LOGIC;
-           q:   in STD_LOGIC;
-           clk: in STD_LOGIC;
-           rst: in STD_LOGIC
-           );
-end component dff;
-
--- full adder
 component fa is
-    port( 
-            a:     in STD_LOGIC;
-            b:     in STD_LOGIC;
-            cin:   in STD_LOGIC;
-            clk:    in STD_LOGIC;
-            sum:   out STD_LOGIC;
-            cout:  out STD_LOGIC
+    port(
+            a, b, cin:      in std_logic;
+            sum, cout:      out std_logic
          );
-end component fa;
+end component;
 
-function to_string ( a: std_logic_vector) return string is
-variable b : string (1 to a'length) := (others => NUL);
-variable stri : integer := 1; 
-begin
-    for i in a'range loop
-        b(stri) := std_logic'image(a((i)))(2);
-    stri := stri+1;
-    end loop;
-return b;
-end function;
+component dff is
+    port(
+            d, clk, rst:    in STD_LOGIC;
+            q:              out std_LOGIC
+         );
+end component;
 
-function ToSLV(i:std_logic) return std_logic_vector is 
-variable O:std_logic_vector(0 to 0):=(0=>i); 
-begin 
-return (0 => i);
-end function ToSLV;
-
-signal xi, yi, so: std_logic_vector(7 downto 0);
-signal xo, yo: STD_LOGIC;
-
-signal si: STD_LOGIC;
-
-signal s_temp: std_logic;
-signal carry: std_logic;
+signal x_i, y_i, cin_sig, cout_sig, s_i: std_logic;
 
 begin
-xi(7 downto 0) <= x(7 downto 0);
-yi(7 downto 0) <= y(7 downto 0);
 
-inp_x_instance:  sr port map(sin => xi, sout => xo, clk => clk, rst => rst);
-inp_y_instance:  sr port map(sin => yi, sout => yo, clk => clk, rst => rst);
+x_inp: sr port map(sin => x, rst => rst, clk => clk, sout => x_i);
+y_inp: sr port map(sin => y, rst => rst, clk => clk, sout => y_i);
 
-adder_instace:   fa port map(a => xo, b=> yo, cin => carry, clk => clk, sum => si, cout => carry);
+full_adder: fa port map(a => x_i, b => y_i, cin => cin_sig, sum => s_i, cout => cout_sig);
 
-op_s_instance:   op_sr port map(sin =>  si, sout => so, clk => clk, rst => rst);
+carry: dff port map(d => cout_sig, rst => rst, clk => clk, q => cin_sig);
 
---df_instance: dff port map(d => s_temp, q => s_temp, clk => clk, rst => rst);
+result: sr port map(sin => s_i, clk => clk, rst => rst, sout => s);
 
-    process(clk, xo) is
-    begin
---        report to_string(so);
---        report to_string(ToSLV(xo));
---        report to_string(ToSLV(yo));
-
-        if rst = '1' then
-            s <= (others => '0');
-        elsif rising_edge(clk) then
-            s <= so;
-         end if;
-    end process;
 end Behavioral;
