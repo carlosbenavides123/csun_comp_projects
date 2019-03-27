@@ -42,13 +42,34 @@ end dff;
 
 architecture Behavioral of dff is
 
+    function to_string ( a: std_logic_vector) return string is
+    variable b : string (1 to a'length) := (others => NUL);
+    variable stri : integer := 1; 
+    begin
+        for i in a'range loop
+            b(stri) := std_logic'image(a((i)))(2);
+        stri := stri+1;
+        end loop;
+    return b;
+    end function;
+    
+    
+    function ToSLV(i:std_logic) return std_logic_vector is 
+    variable O:std_logic_vector(0 to 0):=(0=>i); 
+    begin 
+    return (0 => i);
+    end function ToSLV;
+    
+    signal temp_q: std_logic := '0';
 begin
     process (clk)
     begin
         if (rst = '1') then
-            q <= '0';
+            temp_q <= '0';
         elsif rising_edge(clk) then
-            q <= d;
+            temp_q <= d;
          end if;
+--         report to_string(TOSLV(d));
     end process;
+    q<=temp_q; 
 end Behavioral;

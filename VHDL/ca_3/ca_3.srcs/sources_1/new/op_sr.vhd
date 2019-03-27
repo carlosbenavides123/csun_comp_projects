@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -43,11 +43,12 @@ end op_sr;
 architecture Behavioral of op_sr is
 
 constant WIDTH: integer := 8;
-signal tmp_sig: std_logic_vector(WIDTH-1 downto 0);
-signal tmp_top: std_logic;
+signal tmp_sig: std_logic_vector(7 downto 0):= "00000000";
+signal count: unsigned(3 downto 0):= "0000";
 begin
 
-process (clk, tmp_sig, sin)
+process (clk)
+
 
 function to_string ( a: std_logic_vector) return string is
 variable b : string (1 to a'length) := (others => NUL);
@@ -68,24 +69,32 @@ return (0 => i);
 end function ToSLV;
 
 
-begin
---report to_string(ToSLV(sin));
-tmp_sig(7 downto 0) <= (others => '0');
-
-   if (rising_edge(clk)) then
-      if rst ='1' then
-         tmp_sig <= (others => '0');
-      else
-         for i in 0 to WIDTH-2 loop
-            tmp_sig(i+1) <= tmp_sig(i);
-         end loop;
-      end if;
-   end if;
-   tmp_sig(0) <= sin;
-   report to_string(tmp_sig);
+    begin
+        if rising_edge(clk) then
+            tmp_sig <= sin & tmp_sig(7 downto 1);
+        end if;
+        report to_string(tmp_sig);
+                report to_string(TOSLV(sin));
 
 end process;
 
 sout <= tmp_sig;
 
+
 end Behavioral;
+
+
+
+
+--report to_string(ToSLV(sin));
+
+--   if (rising_edge(clk)) then
+--      if rst ='1' then
+--         tmp_sig <= (others => '0');
+--      else
+--         for i in 7 to 1 loop
+--            tmp_sig(i-1) <= tmp_sig(i);
+--         end loop;
+--      end if;
+--   end if;
+--   report to_string(TOSLV(sin));
