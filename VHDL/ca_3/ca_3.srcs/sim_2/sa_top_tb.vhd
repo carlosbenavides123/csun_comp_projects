@@ -39,20 +39,18 @@ architecture Behavioral of sa_top_tb is
 
 component sa_top is
       port( 
-            x:      in STD_LOGIC_VECTOR(7 downto 0);
-            y:      in STD_LOGIC_VECTOR(7 downto 0);
-            clk:    in STD_LOGIC;
-            rst:    in STD_LOGIC;
-            s:      out STD_LOGIC_VECTOR(7 downto 0)
+            x, y:        in STD_LOGIC;
+            clk, rst:    in STD_LOGIC;
+            s:            out std_logic
          );
 end component sa_top;
 
 constant CP: time := 10 ns;
-signal xin_sig, yin_sig: std_logic_vector(7 downto 0);
+signal xin_sig, yin_sig: std_logic := '0';
 signal clk_sig, rst_sig: std_logic := '0';
-signal s_op: std_logic_vector(7 downto 0);
-
+signal s_op: std_logic;
 begin
+
 uut: sa_top port map(x => xin_sig, y => yin_sig, clk => clk_sig, rst => rst_sig, s => s_op);
 
 -- clock signal test
@@ -64,14 +62,54 @@ begin
     wait for CP/2;
 end process;
 
--- reset signal test
+-- clock signal test
 process
 begin
-    xin_sig <= "10101000";
-    yin_sig <= "10001000";
     rst_sig <= '1';
     wait for CP;
     rst_sig <= '0';
+    wait;
+end process;
+
+-- x
+process
+begin
+    xin_sig <= '1';
+    wait for CP;
+    xin_sig <= '0';
+    wait for CP;
+    xin_sig <= '1';
+    wait for CP;
+    xin_sig <= '1';
+    wait for CP;
+    xin_sig <= '0';
+    wait for CP;
+    xin_sig <= '1';
+    wait for CP;
+    xin_sig <= '1';
+    wait for CP;
+    xin_sig <= '0';
+    wait;
+end process;
+
+-- y
+process
+begin
+    yin_sig <= '0';
+    wait for CP;
+    yin_sig <= '1';
+    wait for CP;
+    yin_sig <= '0';
+    wait for CP;
+    yin_sig <= '0';
+    wait for CP;
+    yin_sig <= '1';
+    wait for CP;
+    yin_sig <= '1';
+    wait for CP;
+    yin_sig <= '1';
+    wait for CP;
+    yin_sig <= '0';
     wait;
 end process;
 

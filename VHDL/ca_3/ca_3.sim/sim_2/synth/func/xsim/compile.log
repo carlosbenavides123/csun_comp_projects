@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.sim/sim_2/synth/func/xsim/sa_top_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sa_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca_3/ca_3.srcs/sim_2/sa_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sa_top_tb

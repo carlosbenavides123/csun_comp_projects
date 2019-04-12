@@ -33,34 +33,23 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity sr is
     port( 
-           sin : in STD_LOGIC;
-           sout : out STD_LOGIC;
-           clk : in STD_LOGIC;
-           rst : in STD_LOGIC
+           sin, rst, clk : in std_logic;
+           sout : out std_logic
         );
 end sr;
 
 architecture Behavioral of sr is
-
-constant WIDTH: integer := 8;
-signal tmp_sig: std_logic_vector(WIDTH-1 downto 0);
-
+    signal r_reg: std_logic_vector(3 downto 0);
+    signal r_next: std_logic_vector(3 downto 0);
 begin
-
-process (clk)
-begin
-   if (rising_edge(clk)) then
-      if rst ='1' then
-         tmp_sig <= (others => '0');
-      else
-         for i in 0 to WIDTH-2 loop
-            tmp_sig(i+1) <= tmp_sig(i);
-         end loop;
-         tmp_sig(0) <= sin;
-      end if;
-   end if;
-end process;
-
-sout <= tmp_sig(WIDTH-1);
-
+    process (rst, clk)
+    begin
+        if rst = '1' then
+            r_reg <= (others=>'0');
+        elsif rising_edge(clk) then
+            r_reg <= r_next;
+        end if;
+    end process;
+    r_next <= sin & r_reg(3 downto 1);
+    sout <= r_reg(0);
 end Behavioral;
