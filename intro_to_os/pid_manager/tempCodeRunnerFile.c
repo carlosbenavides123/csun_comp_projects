@@ -3,7 +3,9 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 #include "pid.h"
+#include "pid.c"
 
 #define NUM_THREADS 100
 #define ITERATIONS	3
@@ -14,48 +16,62 @@
  * to ensure there are no duplicate pid's in use.
  */
 pthread_mutex_t test_mutex;
-int idx = 0;
+int fail = 0;
 
 void *allocator(void *param)
 {
+	pthread_mutex_lock(&mutex);
 	int ret = allocate_pid();
-	while(idx < 100)
+	while(ret == -1)
 	{
-		pthread_mutex_lock(&mutex);
-		if(idx >= 100)
-		{
-			pthread_mutex_unlock(&mutex);
-			break;
-		}
-		idx++;
-		sleep(100);
-		pthread_mutex_unlock(&mutex);
+		fail++;
+		ret = allocate_pid();
 	}
-	sleep(10);
+    printf("\n PID %d has been allocated\n", ret);
+	sleep(SLEEP);
 	release_pid(ret);
+    printf("\n PID %d has been allocated\n", ret);
+	pthread_mutex_unlock(&test_mutex);
+
+	return NULL;
 }
 
 int main(void)
 {
-	int i;
+	int i = 0;
+	int j = 0;
+	int thread = 1;
 	pthread_t tids[NUM_THREADS];
 
-	//Todo:
-	/* allocate the pid map */
-	for(i = 0; i < 100; i++)
+	if (allocate_map() == -1)
+		return -1;
+
+	while( i < ITERATIONS)
 	{
-		pthread_mutex_init(&mutex, NULL);
-		pthread_create(&tids[i], NULL, allocator, NULL);
-		allocator(NULL);
+		while(j < NUM_THREADS)
+		{
+			if (pthread_mutex_init(&test_mutex, NULL) != 0)
+			{
+				printf("\n mutex init failed\n");
+				return 1;
+			}
+
+			thread = pthread_create(&(tids[i]), NULL, &allocator, NULL);
+
+			while (thread != 0)
+			{
+				fail++;
+				thread = pthread_create(&(tids[i]), NULL, &allocator, NULL);
+			}
+			j++;
+		}
+		i++;
 	}
-	for(int i = 0; i < 100; i++)
-	{
-		pthread_join(tids[i], NULL);
-		pthread_mutex_destroy(&mutex);
-	}
-	
-	//Todo:
-	
+
+	sleep(SLEEP);
+
+	pthread_mutex_destroy(&test_mutex);
+	printf("%d times process can not obtain PID", fail);
 	printf("***DONE***\n");
 
 	return 0;

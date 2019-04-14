@@ -1,30 +1,36 @@
 //File 2, pid.c
+
 #include "pid.h"
 #include <pthread.h>
 #include <stdio.h>
-#include <stdbool.h>
+#define TRUE 1
+#define FALSE 0
 
-struct pid_tab
+struct pid_struct
 {
-    int pid;
-    bool bitmap;
-}pidArr[50];
+    int PID;
+    int active;
+} * pid_struct;
 
 /**
  * Allocates the pid map.
  */
-int allocate_map(void) 
+int allocate_map(void)
 {
-    int i,j;
-    for(i = MIN_PID, j =0; i <= MAX_PID; i++, j++)
-    {
-        pidArr[j].pid = i;
-        pidArr[j].bitmap = 0;
-    }
+    int i;
 
-    if(i == MAX_PID && j == 50)
-    	return 1;
-    return -1;
+    pid_struct = (struct pid_struct *)calloc((PID_MAX - PID_MIN + 1), sizeof(struct pid_struct));
+    if (pid_struct == NULL)
+        return -1;
+    pid_struct[0].PID = PID_MIN;
+    pid_struct[0].active = TRUE;
+
+    for(i = 1; i < PID_MAX - PID_MIN + 1; i++)
+    {
+        pid_struct[i].PID = pid_struct[i - 1].PID + 1;
+        pid_struct[i].active = TRUE;
+    }
+    return 1;
 }
 
 /**
@@ -32,28 +38,23 @@ int allocate_map(void)
  */
 int allocate_pid(void)
 {
-	for(int i = MIN_PID, j = 0; i <= MAX_PID; i++, j++)
+    int i;
+    for (i = 0; i < PID_MAX - PID_MIN + 1; i++)
     {
-        if(pidArr[j].bitmap == 0)
+        if(pid_struct[i].active == TRUE)
         {
-            pidArr[j].pid = i;
-            pidArr[j].bitmap = 1;
-            return i;
-            break;
+            pid_struct[i].active = FALSE;
+            return pid_struct[i].PID;
         }
     }
-    return -1;
+    if (i == PID_MAX - PID_MIN + 1)
+        return -1;
 }
+
 /**
  * Releases a pid
  */
 void release_pid(int pid)
 {
-    for(int i = 0; i <= 50; i++)
-    {
-        if(pidArr[i].pid == pid)
-        {
-            pidArr[i].bitmap = 0;
-        }
-    }
+    pid_struct[pid - PID_MIN].active = TRUE;
 }
