@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr 14 20:06:02 2019
+# Process ID: 2511
+# Current directory: /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.runs/synth_1
+# Command line: vivado -log ca4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ca4.tcl
+# Log file: /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.runs/synth_1/ca4.vds
+# Journal file: /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ca4.tcl -notrace
