@@ -19,7 +19,7 @@ component ca4 is
 end component ca4;
 
 constant CP: time := 10 ns;
-signal xin_sig, yin_sig: std_logic_vector(15 downto 0) := "0101010101010101";
+signal xin_sig, yin_sig: std_logic_vector(15 downto 0) := (others => '0');
 signal clk_sig, rst_sig: std_logic;
 signal s_op: std_logic_vector(31 downto 0);
 begin
@@ -29,9 +29,9 @@ uut: ca4 port map(x => xin_sig, y => yin_sig, clk => clk_sig, rst => rst_sig, pr
 -- clock signal test
 process
 begin
-    clk_sig <= '1';
-    wait for CP/2;
     clk_sig <= '0';
+    wait for CP/2;
+    clk_sig <= '1';
     wait for CP/2;
 end process;
 
@@ -42,6 +42,21 @@ begin
     wait;
 end process;
 
+-- clock signal test
+process
+begin
+    wait for CP/2;
+    xin_sig <= "1010101010101010";
+    wait;
+end process;
+
+-- clock signal test
+process
+begin
+    wait for CP/2;
+    yin_sig <= "0101010101010101";
+    wait;
+end process;
 ---- x
 --process
 --begin

@@ -43,9 +43,30 @@ architecture Behavioral of sr is
 
 signal temp_reg, reg: std_logic_vector(15 downto 0) := data_in;
 
+function to_string ( a: std_logic_vector) return string is
+variable b : string (1 to a'length) := (others => NUL);
+variable stri : integer := 1; 
 begin
-    process(clk, rst)
+    for i in a'range loop
+        b(stri) := std_logic'image(a((i)))(2);
+    stri := stri+1;
+    end loop;
+return b;
+end function;
+
+function ToSLV(i:std_logic) return std_logic_vector is 
+variable O:std_logic_vector(0 to 0):=(0=>i); 
+begin 
+return (0 => i);
+end function ToSLV;
+
+
+begin
+    process(clk, rst, temp_reg)
     begin
+--    report to_string(data_in);
+--    report to_string(reg);
+--    report to_string(temp_reg);
         if(rst = '1') then
             temp_reg <= (others=>'0');
         elsif rising_edge(clk) then

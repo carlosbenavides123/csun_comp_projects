@@ -33,26 +33,44 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity test_sr is
     port(
-       data_in: in std_logic_vector(32 downto 0);
-       rst, clk : in std_logic;
-       sout : out std_logic_vector(15 downto 0)
+       data_in:     in std_logic_vector(31 downto 0);
+       rst, clk :   in std_logic;
+       sout :       out std_logic_vector(31 downto 0);
+       sout_temp:   out std_logic_vector(15 downto 0)
     );
 end test_sr;
 
 architecture Behavioral of test_sr is
 
-signal temp_reg, reg: std_logic_vector(32 downto 0) := data_in;
-
+function to_string ( a: std_logic_vector) return string is
+variable b : string (1 to a'length) := (others => NUL);
+variable stri : integer := 1; 
 begin
-    process(clk, rst)
+    for i in a'range loop
+        b(stri) := std_logic'image(a((i)))(2);
+    stri := stri+1;
+    end loop;
+return b;
+end function;
+
+function ToSLV(i:std_logic) return std_logic_vector is 
+variable O:std_logic_vector(0 to 0):=(0=>i); 
+begin 
+return (0 => i);
+end function ToSLV;
+
+signal data_in_temp : std_logic_vector(31 downto 0) := (others => '0');
+begin
+        piso : process (clk,rst,data_in, data_in_temp) is
         begin
-            if(rst = '1') then
-                temp_reg <= (others=>'0');
-            elsif rising_edge(clk) then
-                reg <= temp_reg;
+--        report to_string(data_in);
+--        report to_string(data_in_temp);
+            if (rst='1') then
+                data_in_temp <= (others=>'0');
+            elsif (rising_edge (clk)) then
+                data_in_temp <= '0' & data_in_temp(31 downto 1);
             end if;
-    end process;
-    
-temp_reg <= '0' & reg(32 downto 1);
-sout <= reg(32 downto 17);
+    end process piso;
+sout <= data_in_temp;
+sout_temp <= data_in_temp(31 downto 16);
 end Behavioral;
