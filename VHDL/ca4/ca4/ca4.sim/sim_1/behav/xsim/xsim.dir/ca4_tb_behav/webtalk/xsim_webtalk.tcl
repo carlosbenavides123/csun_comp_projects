@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.sim/sim_1/behav/xsim/xsim.dir/ca4_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Apr 21 16:04:23 2019" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Apr 21 22:49:13 2019" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2258646" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "92118152-c2bd-4a25-83cb-9ab88cb98213" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "d7922225266345b69f0b7fd52ebc6994" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "177" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "369" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Ubuntu" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Ubuntu 19.04" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "809.539 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "3453.635 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -33,10 +33,10 @@ webtalk_add_data -client xsim -key Debug -value "typical" -context "xsim\\comman
 webtalk_add_data -client xsim -key Simulation_Image_Code -value "35 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Image_Data -value "3 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Total_Processes -value "12" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Total_Processes -value "14" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "8" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "1.09_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "200624_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1491363196 -regid "" -xml /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.sim/sim_1/behav/xsim/xsim.dir/ca4_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.sim/sim_1/behav/xsim/xsim.dir/ca4_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.sim/sim_1/behav/xsim/xsim.dir/ca4_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "0.82_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "196644_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3953091996 -regid "" -xml /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.sim/sim_1/behav/xsim/xsim.dir/ca4_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.sim/sim_1/behav/xsim/xsim.dir/ca4_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.sim/sim_1/behav/xsim/xsim.dir/ca4_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

@@ -2,3 +2,5 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VH
 INFO: [VRFC 10-307] analyzing entity ca4
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr

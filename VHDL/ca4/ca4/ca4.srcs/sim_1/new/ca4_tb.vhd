@@ -14,19 +14,20 @@ component ca4 is
                y : in STD_LOGIC_VECTOR (15 downto 0);
                clk : in STD_LOGIC;
                rst : in STD_LOGIC;
+               load: in std_logic;
                prod : out STD_LOGIC_VECTOR (31 downto 0)
           );
 end component ca4;
 
 constant CP: time := 10 ns;
 signal xin_sig, yin_sig: std_logic_vector(15 downto 0) := (others => '0');
-signal clk_sig, rst_sig: std_logic;
+signal clk_sig, rst_sig, load_sig: std_logic;
 signal s_op: std_logic_vector(31 downto 0);
 begin
 
-uut: ca4 port map(x => xin_sig, y => yin_sig, clk => clk_sig, rst => rst_sig, prod => s_op);
+uut: ca4 port map(x => xin_sig, y => yin_sig, clk => clk_sig, rst => rst_sig, load => load_sig, prod => s_op);
 
--- clock signal test
+-- clock
 process
 begin
     clk_sig <= '0';
@@ -35,14 +36,17 @@ begin
     wait for CP/2;
 end process;
 
--- clock signal test
+--load
 process
 begin
-    rst_sig <= '0';
+    wait for CP/2;
+    load_sig <='1';
+    wait for CP/2;
+    load_sig <= '0';
     wait;
 end process;
 
--- clock signal test
+-- x
 process
 begin
     wait for CP/2;
@@ -50,52 +54,12 @@ begin
     wait;
 end process;
 
--- clock signal test
+-- y
 process
 begin
     wait for CP/2;
     yin_sig <= "0101010101010101";
     wait;
 end process;
----- x
---process
---begin
---    wait for CP;
---    xin_sig <= '0';
---    wait for CP;
---    xin_sig <= '1';
---    wait for CP;
---    xin_sig <= '1';
---    wait for CP;
---    xin_sig <= '0';
---    wait for CP;
---    xin_sig <= '1';
---    wait for CP;
---    xin_sig <= '1';
---    wait for CP;
---    xin_sig <= '0';
---    wait;
---end process;
-
----- y
---process
---begin
---    yin_sig <= '0';
---    wait for CP;
---    yin_sig <= '1';
---    wait for CP;
---    yin_sig <= '0';
---    wait for CP;
---    yin_sig <= '0';
---    wait for CP;
---    yin_sig <= '1';
---    wait for CP;
---    yin_sig <= '1';
---    wait for CP;
---    yin_sig <= '1';
---    wait for CP;
---    yin_sig <= '0';
---    wait;
---end process;
 
 end Behavioral;

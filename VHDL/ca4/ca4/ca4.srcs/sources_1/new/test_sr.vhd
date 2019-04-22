@@ -42,35 +42,19 @@ end test_sr;
 
 architecture Behavioral of test_sr is
 
-function to_string ( a: std_logic_vector) return string is
-variable b : string (1 to a'length) := (others => NUL);
-variable stri : integer := 1; 
+signal data_in_temp, res : std_logic_vector(31 downto 0) := (others => '0');
 begin
-    for i in a'range loop
-        b(stri) := std_logic'image(a((i)))(2);
-    stri := stri+1;
-    end loop;
-return b;
-end function;
-
-function ToSLV(i:std_logic) return std_logic_vector is 
-variable O:std_logic_vector(0 to 0):=(0=>i); 
-begin 
-return (0 => i);
-end function ToSLV;
-
-signal data_in_temp : std_logic_vector(31 downto 0) := (others => '0');
-begin
-        piso : process (clk,rst,data_in, data_in_temp) is
+        process (clk,rst,data_in, data_in_temp) is
         begin
---        report to_string(data_in);
---        report to_string(data_in_temp);
             if (rst='1') then
                 data_in_temp <= (others=>'0');
             elsif (rising_edge (clk)) then
+                res <= data_in_temp;
                 data_in_temp <= '0' & data_in_temp(31 downto 1);
             end if;
-    end process piso;
-sout <= data_in_temp;
-sout_temp <= data_in_temp(31 downto 16);
+        end process;
+data_in_temp(31 downto 15) <= data_in(16 downto 0);
+sout <= res;
+sout_temp <= res(31 downto 16);
+
 end Behavioral;
