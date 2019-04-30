@@ -33,7 +33,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity ca5_top is
   port(
-            clk, rst: in std_logic  
+            reqA, reqB, reqC, clk, rst: in std_logic  
        );
 end ca5_top;
 
@@ -42,6 +42,9 @@ architecture Behavioral of ca5_top is
     type StateType is (Idle, Grant_A, Grant_B, Grant_C);
     signal CurrentState, NextState: StateType:= Idle;
     signal count: integer := 0;
+    signal tempA: std_logic := reqA;
+    signal tempB: std_logic := reqB;
+    signal tempC: std_logic := reqC;
 begin
 
 FSM: process(clk, rst)
@@ -54,6 +57,7 @@ begin
                 if count = 60 then
                     CurrentState <= NextState;
                     count <= 0;
+                    tempA <= '0';
                else
                     count <= count + 1;
                end if;
@@ -61,13 +65,15 @@ begin
                 if count = 60 then
                     CurrentState <= NextState;
                     count <= 0;
+                    tempB <= '0';
                 else
                     count <= count + 1;
                 end if;
             when Grant_C =>
                 if count = 60 then
-                    CurrentState <= NextState;
+                    CurrentState <= Idle;
                     count <= 0;
+                    tempC <= '0';
                 else
                     count <= count + 1;
                 end if;
@@ -76,4 +82,8 @@ begin
               end case;
           end if;
     end process;
+    NextState <= Grant_B when tempB = '1' else
+                 Grant_C when tempC = '1' else
+                 Idle;
+                
 end Behavioral;
