@@ -80,7 +80,7 @@ begin
 --    reqC_sig <= '0';
 --    wait for CP/2;
     reqA_sig <= '1';
-    reqB_sig <= '1';
+    reqB_sig <= '0';
     reqC_sig <= '1';
     wait;
 end process;

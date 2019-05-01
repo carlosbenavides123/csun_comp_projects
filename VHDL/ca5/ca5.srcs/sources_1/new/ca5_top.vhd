@@ -79,6 +79,15 @@ begin
         tempA <= reqA;
         tempB <= reqB;
         tempC <= reqC;
+        if reqA = '1' then
+            CurrentState <= Grant_A;
+        elsif reqB = '1' then
+            CurrentState <= Grant_B;
+        elsif reqC = '1' then 
+            CurrentState <= Grant_C;
+        else
+            CurrentState <= Idle;
+        end if;
     elsif rising_edge(clk) then
         case CurrentState is
             when Grant_A =>
