@@ -71,13 +71,7 @@ end function ToSLV;
 
 
 begin
-
-
-
-report to_string(TOSLV(tempA));
-report to_string(TOSLV(reqA));
-report "reqA";
-            report to_string(std_logic_vector(to_unsigned(count,10)));
+    report to_string(std_logic_vector(to_unsigned(count,10)));
 
     if rst = '1' then
         CurrentState <= Idle;
@@ -89,13 +83,17 @@ report "reqA";
         case CurrentState is
             when Grant_A =>
                 if count = 60 then
-                    CurrentState <= NextState;
-                    count <= 0;
                     tempA <= '0';
+                    count <= 0;
                     resA <= '0';
-                    report "made it here";
-                    report to_string(ToSLV(tempB));
-                                        report to_string(ToSLV(tempA));
+                    
+                    if tempB = '1' then
+                        CurrentState <= Grant_B;
+                    elsif tempC = '1' then
+                         CurrentState <= Grant_C;
+                    else
+                        CurrentState <= Idle;
+                     end if;
                else
                     count <= count + 1;
                     resA <= '1';
@@ -105,19 +103,16 @@ report "reqA";
                
             when Grant_B =>
                 if count = 60 then
-                    tempB <= '0';
-                                        tempB <= '0';
-
-                    tempB <= '0';
-                    tempB <= '0';
-                    tempB <= '0';
-
+--                    tempB <= '0';
                     count <= 0;
                     resB <= '0';
-                    CurrentState <= NextState;
-                    CurrentState <= Grant_C;
-
-                    report to_string(ToSLV(tempB));
+                    
+--                    CurrentState <= NextState;
+                    if tempC = '1' then
+                        CurrentState <= Grant_C;
+                    else
+                        CurrentState <= Idle;
+                     end if;
 
                 else
                     count <= count + 1;
@@ -141,11 +136,19 @@ report "reqA";
                  
             when others => 
                 CurrentState <= Idle;
+                resA <= '0';
+                resB <= '0';
+                resC <= '0';
               end case;
           end if;
+          
     end process;
-      NextState <= Grant_B when tempB = '1' else
-             Grant_C when tempC = '1' else
-             Idle;
+    
+    -- wasnt working but the idea is here...
+--      NextState <= 
+--             Grant_A when tempA = '1' else
+--             Grant_B when tempB = '1' else
+--             Grant_C when tempC = '1' else
+--             Idle;
                 
 end Behavioral;

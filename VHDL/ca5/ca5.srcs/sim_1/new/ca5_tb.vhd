@@ -39,20 +39,28 @@ architecture Behavioral of ca5_tb is
 
 component ca5_top is
   port(
-            reqA, reqB, reqC, clk, rst: in std_logic;
+            reqA, reqB, reqC, clk, rst, load: in std_logic;
             resA, resB, resC          : out std_logic
        );
 end component;
 
-signal clk_sig, reqA_sig, reqB_sig, reqC_sig, rst_sig: std_logic := '0';
+signal clk_sig, reqA_sig, reqB_sig, reqC_sig, rst_sig, load_sig: std_logic := '0';
 signal resA_sig, resB_sig, resC_sig: std_logic;
 
 constant CP: time := 10 ns;
 
 begin
 
-uut: ca5_top port map(reqA => reqA_sig, reqB => reqB_sig, reqC => reqC_sig, rst => rst_sig, clk => clk_sig, resA => resA_sig, resB => resB_sig, resC => resC_sig);
+uut: ca5_top port map(reqA => reqA_sig, reqB => reqB_sig, reqC => reqC_sig, rst => rst_sig, clk => clk_sig, resA => resA_sig, resB => resB_sig, resC => resC_sig, load => load_sig);
 
+-- load
+process
+begin
+    load_sig <= '1';
+    wait for CP/2;
+    load_sig <= '0';
+    wait;
+end process;
 
 -- clock
 process
@@ -64,7 +72,7 @@ begin
     wait for CP/2;
 end process;
 
--- clock
+-- req
 process
 begin
 --    reqA_sig <= '0';
