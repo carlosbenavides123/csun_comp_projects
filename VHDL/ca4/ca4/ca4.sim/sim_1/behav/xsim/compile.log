@@ -1,0 +1,477 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+ERROR: [VRFC 10-719] formal port/generic <prod_sig> is not declared in <test_sr> [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd:71]
+ERROR: [VRFC 10-2666] formal port data_in has no actual or default value [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd:71]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd:44]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+ERROR: [VRFC 10-1472] type error near data_in ; expected type boolean [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-29] to_string expects 1 arguments [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-1471] type error near data_in ; current type std_logic_vector; expected type positive [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-925] indexed name is not a string [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-1472] type error near temp ; expected type boolean [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-29] to_string expects 1 arguments [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-1471] type error near temp ; current type std_logic_vector; expected type positive [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-925] indexed name is not a string [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:43]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+ERROR: [VRFC 10-1472] type error near data_in ; expected type boolean [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-29] to_string expects 1 arguments [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-1471] type error near data_in ; current type std_logic_vector; expected type positive [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-925] indexed name is not a string [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:66]
+ERROR: [VRFC 10-1472] type error near temp ; expected type boolean [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-29] to_string expects 1 arguments [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-1471] type error near temp ; current type std_logic_vector; expected type positive [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-925] indexed name is not a string [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:67]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:43]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+ERROR: [VRFC 10-1412] syntax error near mp [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:68]
+ERROR: [VRFC 10-704] formal a has no actual or default value [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:68]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd:43]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+ERROR: [VRFC 10-47] load is already declared in this region [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd:63]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd:42]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+ERROR: [VRFC 10-47] load is already declared in this region [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd:91]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd:45]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+ERROR: [VRFC 10-1412] syntax error near begin [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd:45]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd:9]
+INFO: [VRFC 10-240] VHDL file /home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sim_1/new/ca4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/ca4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ca4
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/carlos/csun/csun_comp_projects/VHDL/ca4/ca4/ca4.srcs/sources_1/new/test_sr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_sr

@@ -33,18 +33,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity fa is
     port( 
-            a:     in STD_LOGIC;
-            b:     in STD_LOGIC;
-            cin:   in STD_LOGIC;
-            sum:   out STD_LOGIC;
-            cout:  out STD_LOGIC
+            a, b, cin: in STD_LOGIC;
+            sum:            out STD_LOGIC;
+            cout:           out STD_LOGIC
          );
 end fa;
 
 architecture Behavioral of fa is
-
 begin
-    sum <= a xor b xor cin;
-    cout <= (a and b) or (a and cin) or (b and cin);
-
+sum <= a xor b xor cin;
+cout <= (a and b) or (a and cin) or (b and cin);
 end Behavioral;

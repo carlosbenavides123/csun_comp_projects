@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "unistd.h": "c",
+        "pid.h": "c"
+    }
+}

@@ -32,6 +32,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity ca4 is
+<<<<<<< HEAD
   port(
             x:      in std_logic_vector(15 downto 0);
             y:      in std_logic_vector(15 downto 0);
@@ -39,6 +40,16 @@ entity ca4 is
             rst:    in std_logic;
             prod:   out std_logic_vector(31 downto 0)    
        );
+=======
+    port (
+           x    : in std_logic_vector (15 downto 0);
+           y    : in std_logic_vector (15 downto 0);
+           clk  : in std_logic;
+           rst  : in std_logic;
+           load: in std_logic;
+           prod : out std_logic_vector (31 downto 0)
+         );
+>>>>>>> e076795dc4b6150feea2e3671810b6223373a48c
 end ca4;
 
 architecture Behavioral of ca4 is
@@ -46,7 +57,34 @@ signal prod_sig: std_logic_vector(32 downto 0);
 signal y_reg, op1, op2: std_logic_vector(15 downto 0);
 signal op1_sel: std_logic;
 
+signal y_reg, op1, op2, temppp :    std_logic_vector (15 downto 0) := (others=>'0');
+signal prod_sig:            std_logic_vector(31 downto 0) := (others=>'0');
+signal temp_sr:             std_logic_vector(31 downto 0) := (others=>'0');
+signal op1_sel:             std_logic := '0';
+
+component sr is
+    port(
+            data_in:   in std_logic_vector(15 downto 0);
+            rst, clk, load:  in std_logic;
+            sout:      out std_logic
+         );
+end component;
+
+component test_sr is
+    port(
+            data_in:    in std_logic_vector(31 downto 0);
+            rst, clk :  in std_logic;
+            sout :      out std_logic_vector(31 downto 0);
+            sout_temp:   out std_logic_vector(15 downto 0)
+         );
+end component;
+
+signal res :    std_logic_vector (31 downto 0) := (others=>'0');
+signal temp_x : std_logic_vector(15 downto 0);
+signal temp_sum : std_logic_vector(16 downto 0) := (others => '0');
+
 begin
+<<<<<<< HEAD
     process(clk, rst)
     begin
         if rising_edge(clk) then
@@ -57,6 +95,25 @@ begin
 op1 <= y_reg when op1_sel =  '1' else (others => '0');
 
 prod_sig <= std_logic_vector(unsigned("0000000000000000"&op1) + unsigned("00000000000000000"&op2));
+=======
+    temp_x <= x;
+>>>>>>> e076795dc4b6150feea2e3671810b6223373a48c
 
+    prod_inp:   test_sr port map(data_in => res, rst => rst, clk => clk, sout => res, sout_temp => temppp);
+    x_inp:      sr      port map(data_in => temp_x, rst => rst, clk => clk, load => load, sout => op1_sel);
 
+    process(clk, rst, res, y)
+    begin
+        if (rising_edge(clk)) then
+            if op1_sel = '1' then
+                op1 <= y_reg;
+            else
+                op1 <= (others => '0');
+             end if;
+           temp_sum <= '0' & std_logic_vector(unsigned(op1) + unsigned(temppp));
+           res <= "000000000000000" & temp_sum;
+        end if;
+    end process;
+    y_reg <= y;
+    prod <= res;
 end Behavioral;
