@@ -26,6 +26,18 @@ static int thread_count = 0;
 static void exit_error(int); /* helper function. */
 static void wait_for_queue();
 
+
+/*
+*  prints the program help message.
+*/
+static void print_help(const char *progname)
+{
+	printf("usage: %s <num_threads> <queue_size> <i_1, i_2 ... i_numofthreads>\n", progname);
+	printf("\tnum_threads: the number of worker threads to run\n");
+	printf("\tqueue_size: the number of threads that can be in the scheduler at one time\n");
+	printf("\ti_1, i_2 ...i_numofthreads: the number of quanta each worker thread runs\n");
+}
+
 /*******************************************************************************
  *
  * Implement these functions.
@@ -90,7 +102,7 @@ void cancel_worker(thread_info_t *info)
 {
 
 	/* TODO: send a signal to the thread, telling it to kill itself*/
-
+	pthread_kill(info->thrid, info);
 	/* Update global wait and run time info */
 	wait_times += info->wait_time;
 	run_times += info->run_time;
@@ -121,14 +133,14 @@ static void suspend_worker(thread_info_t *info)
 	update_run_time(info);
 
 	/* TODO: Update quanta remaining. */
-
+	whatgoeshere = info->thrid;
 	/* TODO: decide whether to cancel or suspend thread */
 	if(whatgoeshere) {
 	  /*
 	   * Thread still running: suspend.
 	   * TODO: Signal the worker thread that it should suspend.
 	   */
-
+	  cancel_worker(info);
 	  /* Update Schedule queue */
 	  list_remove(&sched_queue,info->le);
 	  list_insert_tail(&sched_queue,info->le);
@@ -183,7 +195,6 @@ void timer_handler()
 
 /* 
  * Set up the signal handlers for SIGALRM, SIGUSR1, and SIGTERM.
- * TODO: Implement this function.
  */
 void setup_sig_handlers() {
 
@@ -289,7 +300,7 @@ static void *scheduler_run(void *unused)
 	wait_for_queue();
 
 	/* TODO: start the timer */
-
+	timer_settime(unused, QUANTUM, unused, unused);
 	/*keep the scheduler thread alive*/
 	while( !quit )
 		sched_yield();
