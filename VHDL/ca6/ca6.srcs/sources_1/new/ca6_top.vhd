@@ -62,34 +62,35 @@ signal state, next_state: state_type;
 
 begin
 
-process(clk)
-begin
-    if rising_edge(clk) then
-        if rst='1' then
-            state <= next_state;
-        end if;
-   end if;
-end process;
+ram_instance: blk_mem_gen_0
+    port map(
+        clka    =>       clk,
+        ena     =>       re,
+        wea     =>       we,
+        addra   =>       addr,
+        dina    =>       sum_sig,
+        douta   =>       ram_out
+       );
 
 output_decode: process(state)
-begin
-    if state = s0 then
-        re <= '1';
-        we <= "0";
-    elsif state = s1 then
-        re <= '1';
-        we <= "0";
-    elsif state = s2 then
-        re <= '0';
-        we <= "0";
-    elsif state = s3 then
-        re <= '0';
-        we <= "1";
-    else
-        re <= '0';
-        we <= "0";
-    end if;
-end process;
+       begin
+           if state = s0 then
+               re <= '1';
+               we <= "0";
+           elsif state = s1 then
+               re <= '1';
+               we <= "0";
+           elsif state = s2 then
+               re <= '0';
+               we <= "0";
+           elsif state = s3 then
+               re <= '0';
+               we <= "1";
+           else
+               re <= '0';
+               we <= "0";
+           end if;
+       end process;
 
 next_state_decode: process(state)
 begin
@@ -110,6 +111,15 @@ begin
         end case;
     end process;
 
+process(clk)
+begin
+    if rising_edge(clk) then
+        if rst='1' then
+            state <= next_state;
+        end if;
+   end if;
+end process;
+
 sum_out <= sum_sig;
 
 process(clk, rst)
@@ -120,16 +130,6 @@ begin
         cntrl <= cntrl + 1;
     end if;
 end process;
-
-ram_instance: blk_mem_gen_0
-    port map(
-        clka    =>       clk,
-        ena     =>       re,
-        wea     =>       we,
-        addra   =>       addr,
-        dina    =>       sum_sig,
-        douta   =>       ram_out
-       );
 
 addr <= std_logic_vector(cntrl);
 
