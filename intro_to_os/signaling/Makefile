@@ -1,6 +1,6 @@
 CC = gcc
 CCOPTS = -c -g -Wall
-LINKOPTS = -g -lrt -pthread -Wall
+LINKOPTS = -g -lpthread -lrt -Wall
 
 EXEC=scheduler
 OBJECTS=scheduler.o worker.o list.o 
