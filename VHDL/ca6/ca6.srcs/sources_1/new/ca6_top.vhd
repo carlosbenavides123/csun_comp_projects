@@ -107,6 +107,17 @@ dual_port_instance: blk_mem_gen_1
         doutb   => ram_out_b
     );
 
+ process(clk)
+    begin
+        if (rising_edge(clk)) then
+            if (rst = '1') then 
+                state <= s0;
+            else
+                state <= next_state;
+            end if;
+        end if;
+     end process;
+
 output_decode: process(state)
        begin
            if state = s0 then
