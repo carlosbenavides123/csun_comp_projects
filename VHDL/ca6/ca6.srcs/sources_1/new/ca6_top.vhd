@@ -152,15 +152,6 @@ begin
         end case;
     end process;
 
-process(clk)
-begin
-    if rising_edge(clk) then
-        if rst='1' then
-            state <= next_state;
-        end if;
-   end if;
-end process;
-
 sum_out <= sum_sig;
 
 process(clk, rst)
