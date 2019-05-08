@@ -51,37 +51,78 @@ component blk_mem_gen_0
   );
 end component;
 
-signal cntrl:       unsigned(9 downto 0);
-signal addr:        std_logic_vector(9 downto 0);
-signal sum_sig, ram_out, add_out, ram_out_sig: std_logic_vector(15 downto 0);
-signal re:          std_logic;
-signal we:          std_logic_vector(0 downto 0);
+component blk_mem_gen_1 IS
+  PORT (
+    clka : IN STD_LOGIC;
+    ena : IN STD_LOGIC;
+    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    clkb : IN STD_LOGIC;
+    enb : IN STD_LOGIC;
+    web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addrb : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    dinb : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    doutb : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+  );
+END component;
 
+
+signal cntrl, cntrb:       unsigned(9 downto 0);
+signal addr, addrb:        std_logic_vector(9 downto 0);
+signal sum_sig, ram_out, ram_out_b, add_out, ram_out_sig: std_logic_vector(15 downto 0);
+signal re, reb:          std_logic;
+signal we, web:          std_logic_vector(0 downto 0);
+signal sum_sig_b: std_logic_vector(15 downto 0);
 type STATE_TYPE is (s0, s1, s2, s3);
 signal state, next_state: state_type;
 
 begin
 
-ram_instance: blk_mem_gen_0
+--ram_instance: blk_mem_gen_0
+--    port map(
+--        clka    =>       clk,
+--        ena     =>       re,
+--        wea     =>       we,
+--        addra   =>       addr,
+--        dina    =>       sum_sig,
+--        douta   =>       ram_out
+--       );
+
+
+dual_port_instance: blk_mem_gen_1
     port map(
-        clka    =>       clk,
-        ena     =>       re,
-        wea     =>       we,
-        addra   =>       addr,
-        dina    =>       sum_sig,
-        douta   =>       ram_out
-       );
+        clka =>       clk,
+        ena =>       re,
+        wea =>       we,
+        addra =>       addr,
+        dina  =>       sum_sig,
+        douta   => ram_out,
+        clkb    =>       clk,
+        enb     =>  reb,
+        web     =>  web,
+        addrb   => addrb,
+        dinb    =>  (others => '0'),
+        doutb   => ram_out_b
+    );
 
 output_decode: process(state)
        begin
            if state = s0 then
                re <= '1';
+               reb <= '0';
                we <= "0";
+               web <= "0";
            elsif state = s1 then
                re <= '1';
+               reb <= '1';
                we <= "0";
+               web <= "0";
            elsif state = s2 then
                re <= '0';
+               reb <= '0';
+               web <= "0";
                we <= "0";
            elsif state = s3 then
                re <= '0';
@@ -128,10 +169,12 @@ begin
         cntrl <= (others => '0');
     elsif rising_edge(clk) then
         cntrl <= cntrl + 1;
+        cntrb <= cntrl + 1;
     end if;
 end process;
 
 addr <= std_logic_vector(cntrl);
+addrb <= std_logic_vector(cntrb);
 
 process(clk, rst)
 begin
