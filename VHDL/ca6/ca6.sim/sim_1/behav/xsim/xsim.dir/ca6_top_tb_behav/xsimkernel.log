@@ -1,4 +1,7 @@
-Running: xsim.dir/ca6_top_tb_behav/xsimk -simmode gui -wdb ca6_top_tb_behav.wdb -simrunnum 0 -socket 50297
+Running: xsim.dir/ca6_top_tb_behav/xsimk -simmode gui -wdb ca6_top_tb_behav.wdb -simrunnum 0 -socket 43919
 Design successfully loaded
 Design Loading Memory Usage: 33380 KB (Peak: 33388 KB)
 Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 123316 KB (Peak: 180652 KB)
+Simulation CPU Usage: 10 ms

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="blk_mem_gen_1_synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1557289146">
-  <File Type="RDS-UTIL-PB" Name="blk_mem_gen_1_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="blk_mem_gen_1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="blk_mem_gen_1_utilization_synth.pb"/>
   <File Type="RDS-RDS" Name="blk_mem_gen_1.vds"/>
   <File Type="RDS-DCP" Name="blk_mem_gen_1.dcp"/>
   <File Type="PA-TCL" Name="blk_mem_gen_1.tcl"/>
