@@ -2,3 +2,6 @@ Running: xsim.dir/up_down_tb_behav/xsimk -simmode gui -wdb up_down_tb_behav.wdb 
 Design successfully loaded
 Design Loading Memory Usage: 32612 KB (Peak: 32672 KB)
 Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 122548 KB (Peak: 179884 KB)
+Simulation CPU Usage: 10 ms

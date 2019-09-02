@@ -7,7 +7,7 @@ end fix_num_cycles_tb;
 
 architecture Behavioral of fix_num_cycles_tb is
 component fix_num_cycles
-    generic ( num_cycles : integer := 1); --at least 1
+    generic ( num_cycles : integer := 5); --at least 1
     Port ( 
         enable : in STD_LOGIC;
         reset : in STD_LOGIC;
@@ -17,7 +17,7 @@ end component;
 
   signal enable: STD_LOGIC := '1';
   signal reset: STD_LOGIC := '0';
-  signal clk_out_sig: STD_LOGIC := '1';
+  signal clk_out_sig: STD_LOGIC;
   signal num_cycles: INTEGER := 5;
 begin
 
@@ -28,11 +28,12 @@ begin
 
   stimulus: process
   begin
-    wait for 10 ns;
-    reset<='0';
+    reset<='1';
     enable<='1';
     wait for 50 ns;
-
+    reset <= '0';
+    wait for 50 ns;
+    reset <= '1';
     wait;
   end process;
 end Behavioral;

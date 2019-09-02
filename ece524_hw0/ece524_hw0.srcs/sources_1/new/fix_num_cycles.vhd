@@ -4,7 +4,7 @@ use	IEEE.std_logic_unsigned.all;
 use	IEEE.numeric_std.all;	
 
 entity fix_num_cycles is
-    generic ( num_cycles : integer := 1); --at least 1
+    generic ( num_cycles : integer := 5); --at least 1
     Port ( 
         enable : in STD_LOGIC;
         reset : in STD_LOGIC;
