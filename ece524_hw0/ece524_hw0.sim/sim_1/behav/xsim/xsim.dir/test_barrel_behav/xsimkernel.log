@@ -1,0 +1,7 @@
+Running: xsim.dir/test_barrel_behav/xsimk -simmode gui -wdb test_barrel_behav.wdb -simrunnum 0 -socket 54679
+Design successfully loaded
+Design Loading Memory Usage: 32604 KB (Peak: 32664 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 122540 KB (Peak: 179876 KB)
+Simulation CPU Usage: 40 ms

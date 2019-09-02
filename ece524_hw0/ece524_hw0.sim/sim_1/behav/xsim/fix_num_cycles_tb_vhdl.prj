@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ece524_hw0.srcs/sources_1/new/fix_num_cycles.vhd" \
+"../../../../ece524_hw0.srcs/sim_1/new/fix_num_cycles_tb.vhd" \
+
+# Do not sort compile order
+nosort

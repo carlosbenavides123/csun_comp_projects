@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Sep  2 11:02:40 2019
+# Process ID: 12682
+# Current directory: /home/carlos/csun/ece524_hw0/ece524_hw0.runs/synth_1
+# Command line: vivado -log fix_num_cycles.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fix_num_cycles.tcl
+# Log file: /home/carlos/csun/ece524_hw0/ece524_hw0.runs/synth_1/fix_num_cycles.vds
+# Journal file: /home/carlos/csun/ece524_hw0/ece524_hw0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fix_num_cycles.tcl -notrace
