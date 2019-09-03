@@ -1,9 +1,9 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /home/carlos/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a9d85eb2f5e14ae0895c8b5e90a4f89f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fix_num_cycles_tb_behav xil_defaultlib.fix_num_cycles_tb -log elaborate.log 
-Using 8 slave threads.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a9d85eb2f5e14ae0895c8b5e90a4f89f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fix_num_cycles_tb_behav xil_defaultlib.fix_num_cycles_tb -log elaborate.log 
+Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-1625] value in initialization depends on signal num_cycles [/home/carlos/csun/csun_comp_projects/ece524_hw0/ece524_hw0.srcs/sim_1/new/fix_num_cycles_tb.vhd:24]
+WARNING: [VRFC 10-1625] value in initialization depends on signal num_cycles [C:/Users/carlos/csun/csun_comp_projects/ece524_hw0/ece524_hw0.srcs/sim_1/new/fix_num_cycles_tb.vhd:24]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
