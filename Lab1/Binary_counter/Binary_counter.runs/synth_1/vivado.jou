@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Sep  3 10:33:33 2019
+# Process ID: 16836
+# Current directory: C:/vhdl_temp/Binary_counter/Binary_counter.runs/synth_1
+# Command line: vivado.exe -log Binary_Counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Binary_Counter.tcl
+# Log file: C:/vhdl_temp/Binary_counter/Binary_counter.runs/synth_1/Binary_Counter.vds
+# Journal file: C:/vhdl_temp/Binary_counter/Binary_counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Binary_Counter.tcl -notrace
