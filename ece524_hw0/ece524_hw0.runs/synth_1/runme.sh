@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/carlos/csun/ece524_hw0/ece524_hw0.runs/synth_1'
+HD_PWD='/home/carlos/csun/csun_comp_projects/ece524_hw0/ece524_hw0.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log fix_num_cycles.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fix_num_cycles.tcl
+EAStep vivado -log fsm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fsm.tcl
