@@ -17,6 +17,8 @@ begin
 
 process(clk)
 begin
+        report "The value of 'a' is " & integer'image(to_integer(unsigned(d)));
+
     if rising_edge(clk) then
         d_sig <= d;
     end if;

@@ -44,11 +44,10 @@ signal r_Mem : t_Memory;
 
 type d_Memory is array (0 to 20) of std_logic_vector(36 downto 0);
 signal dff_op: d_Memory := (others => (others => '0'));
+signal add_op: d_Memory := (others => (others => '0'));
 
 type dsp_Memory is array (0 to 20) of std_logic_vector(31 downto 0);
 signal dsp_cache: dsp_Memory := (others => (others => '0'));
-
-
 
  
 -- SIGNALS
@@ -84,14 +83,14 @@ r_Mem(0 to 20) <= (
 generate_everything_lol: for i in 0 to 20 generate
 
     first: if i = 0 generate
-      multiply: multiplier port map
+      multiply_first: multiplier port map
          (
              r_Mem(20 - i),
              x_input,
              dsp_cache(i)
          );
          first_one_z <= "00000" & dsp_cache(i);
-         z_delay: dff port map
+         z_delay_first: dff port map
          (
             first_one_z,
             clk,
@@ -100,42 +99,40 @@ generate_everything_lol: for i in 0 to 20 generate
      end generate first;
 
     middle: if i >= 1 and i < 20 generate
-        multiply: multiplier port map
+        multiply_mid: multiplier port map
          (
              r_Mem(20 - i),
              x_input,
              dsp_cache(i)
          );
 
-         add: adder port map
+         add_mid: adder port map
          (
             dff_op(i - 1),
             dsp_cache(i),
+            add_op(i)
+         );
+
+         z_delay_mid: dff port map
+         (
+            add_op(i),
+            clk,
             dff_op(i)
          );
-
-         z_delay: dff port map
-         (
-            dff_op(i),
-            clk,
-            dff_op(i + 1)
-         );
-         
-
      end generate middle;
 
      last_one: if i = 20 generate
      
-          multiply: multiplier port map
+          multiply_last: multiplier port map
           (
               r_Mem(20 - i),
               x_input,
               dsp_cache(i)
           );
           
-          add: adder port map
+          add_last: adder port map
           (
-             dff_op(i),
+             dff_op(i - 1),
              dsp_cache(i),
              dsp
           );

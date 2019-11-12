@@ -21,7 +21,7 @@ end component;
 
 -- CONST
 
-constant clk_period : time := 12.5 ns;
+constant clk_period : time := 10 ns;
 
 
 -- SIGNALS
@@ -55,25 +55,25 @@ din_steady :process
 begin
 --wait for clk_period;
 x_input_sig <= std_logic_vector(to_signed(0, 16));      
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(77041, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(124655, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(124655, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(77041, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(0, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(-77041, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(-124655, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(-124655, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(-77041, 16));
-wait for 12.5ns;
+wait for 10ns;
 x_input_sig <= std_logic_vector(to_signed(0, 16));
 end process;
 

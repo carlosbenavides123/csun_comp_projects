@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Nov 11 14:23:19 2019
-# Process ID: 14892
+# Start of session at: Mon Nov 11 17:03:13 2019
+# Process ID: 15460
 # Current directory: C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.runs/synth_1/main.vds
@@ -15,106 +15,110 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14600 
+INFO: Helper process launched with PID 15288 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 409.074 ; gain = 96.391
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 409.648 ; gain = 97.445
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:13]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:87]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_first' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'multiplier' (1#1) [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:14]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:94]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_first' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:93]
 INFO: [Synth 8-638] synthesizing module 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'dff' (2#1) [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:14]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
 INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'adder' (3#1) [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:13]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:103]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:110]
-INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:117]
-INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:129]
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:136]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_mid' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:102]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_mid' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:109]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:5' bound to instance 'z_delay_mid' of component 'dff' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:116]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:5' bound to instance 'multiply_last' of component 'multiplier' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:126]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:5' bound to instance 'add_last' of component 'adder' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:133]
 INFO: [Synth 8-256] done synthesizing module 'main' (4#1) [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/main.vhd:13]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.828 ; gain = 151.145
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 464.809 ; gain = 152.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.828 ; gain = 151.145
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 464.809 ; gain = 152.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.828 ; gain = 151.145
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 464.809 ; gain = 152.605
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.828 ; gain = 151.145
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 464.809 ; gain = 152.605
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[2].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[4].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[6].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[8].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[12].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[14].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[16].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[18].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply' (multiplier) to 'generate_everything_lol[20].last_one.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[3].middle.multiply' (multiplier) to 'generate_everything_lol[17].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[5].middle.multiply' (multiplier) to 'generate_everything_lol[15].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[7].middle.multiply' (multiplier) to 'generate_everything_lol[13].middle.multiply'
-INFO: [Synth 8-223] decloning instance 'generate_everything_lol[9].middle.multiply' (multiplier) to 'generate_everything_lol[11].middle.multiply'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[2].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[4].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[6].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[8].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[12].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[14].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[16].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[18].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[0].first.multiply_first' (multiplier) to 'generate_everything_lol[20].last_one.multiply_last'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[1].middle.multiply_mid' (multiplier) to 'generate_everything_lol[19].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[3].middle.multiply_mid' (multiplier) to 'generate_everything_lol[17].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[5].middle.multiply_mid' (multiplier) to 'generate_everything_lol[15].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[7].middle.multiply_mid' (multiplier) to 'generate_everything_lol[13].middle.multiply_mid'
+INFO: [Synth 8-223] decloning instance 'generate_everything_lol[9].middle.multiply_mid' (multiplier) to 'generate_everything_lol[11].middle.multiply_mid'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -127,9 +131,9 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     37 Bit       Adders := 19    
+	   2 Input     37 Bit       Adders := 20    
 +---Registers : 
-	               37 Bit    Registers := 19    
+	               37 Bit    Registers := 20    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -162,38 +166,94 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[0].first.z_delay/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[19].middle.z_delay/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-DSP Report: Generating DSP generate_everything_lol[3].middle.multiply/conv, operation Mode is: A*(B:0x3fee8).
-DSP Report: operator generate_everything_lol[3].middle.multiply/conv is absorbed into DSP generate_everything_lol[3].middle.multiply/conv.
-DSP Report: Generating DSP generate_everything_lol[5].middle.multiply/conv, operation Mode is: A*(B:0x31d).
-DSP Report: operator generate_everything_lol[5].middle.multiply/conv is absorbed into DSP generate_everything_lol[5].middle.multiply/conv.
-DSP Report: Generating DSP generate_everything_lol[7].middle.multiply/conv, operation Mode is: A*(B:0x3f822).
-DSP Report: operator generate_everything_lol[7].middle.multiply/conv is absorbed into DSP generate_everything_lol[7].middle.multiply/conv.
-DSP Report: Generating DSP generate_everything_lol[9].middle.multiply/conv, operation Mode is: A*(B:0x1c9c).
-DSP Report: operator generate_everything_lol[9].middle.multiply/conv is absorbed into DSP generate_everything_lol[9].middle.multiply/conv.
-DSP Report: Generating DSP generate_everything_lol[10].middle.multiply/conv, operation Mode is: A*(B:0x2e00).
-DSP Report: operator generate_everything_lol[10].middle.multiply/conv is absorbed into DSP generate_everything_lol[10].middle.multiply/conv.
-DSP Report: Generating DSP generate_everything_lol[19].middle.multiply/conv, operation Mode is: A*(B:0x51).
-DSP Report: operator generate_everything_lol[19].middle.multiply/conv is absorbed into DSP generate_everything_lol[19].middle.multiply/conv.
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[0].first.z_delay_first/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[0].first.z_delay_first/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[9].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[10].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[2].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[4].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[6].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[8].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[12].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[14].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[16].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element generate_everything_lol[18].middle.z_delay_mid/d_sig_reg was removed.  [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:23]
+DSP Report: Generating DSP generate_everything_lol[1].middle.z_delay_mid/d_sig_reg, operation Mode is: (A*(B:0x51))'.
+DSP Report: register generate_everything_lol[1].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[1].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[0].first.z_delay_first/d_sig_reg is absorbed into DSP generate_everything_lol[1].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[1].middle.add_mid/sum is absorbed into DSP generate_everything_lol[1].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[1].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[1].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[3].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x3fee8).
+DSP Report: register generate_everything_lol[2].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[3].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[3].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[3].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[3].middle.add_mid/sum is absorbed into DSP generate_everything_lol[3].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[3].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[3].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[5].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x31d).
+DSP Report: register generate_everything_lol[4].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[5].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[5].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[5].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[5].middle.add_mid/sum is absorbed into DSP generate_everything_lol[5].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[5].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[5].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[7].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x3f822).
+DSP Report: register generate_everything_lol[6].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[7].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[7].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[7].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[7].middle.add_mid/sum is absorbed into DSP generate_everything_lol[7].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[7].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[7].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[9].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x1c9c).
+DSP Report: register generate_everything_lol[8].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[9].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[9].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[9].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[9].middle.add_mid/sum is absorbed into DSP generate_everything_lol[9].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[9].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[9].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[10].middle.z_delay_mid/d_sig_reg, operation Mode is: PCIN+A*(B:0x2e00).
+DSP Report: register generate_everything_lol[10].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[10].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[10].middle.add_mid/sum is absorbed into DSP generate_everything_lol[10].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[10].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[10].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[11].middle.z_delay_mid/d_sig_reg, operation Mode is: PCIN+A*(B:0x1c9c).
+DSP Report: register generate_everything_lol[11].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[11].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[11].middle.add_mid/sum is absorbed into DSP generate_everything_lol[11].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[9].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[11].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[13].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x3f822).
+DSP Report: register generate_everything_lol[12].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[13].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[13].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[13].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[13].middle.add_mid/sum is absorbed into DSP generate_everything_lol[13].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[7].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[13].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[15].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x31d).
+DSP Report: register generate_everything_lol[14].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[15].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[15].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[15].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[15].middle.add_mid/sum is absorbed into DSP generate_everything_lol[15].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[5].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[15].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[17].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x3fee8).
+DSP Report: register generate_everything_lol[16].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[17].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[17].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[17].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[17].middle.add_mid/sum is absorbed into DSP generate_everything_lol[17].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[3].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[17].middle.z_delay_mid/d_sig_reg.
+DSP Report: Generating DSP generate_everything_lol[19].middle.z_delay_mid/d_sig_reg, operation Mode is: C'+A*(B:0x51).
+DSP Report: register generate_everything_lol[18].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[19].middle.z_delay_mid/d_sig_reg.
+DSP Report: register generate_everything_lol[19].middle.z_delay_mid/d_sig_reg is absorbed into DSP generate_everything_lol[19].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[19].middle.add_mid/sum is absorbed into DSP generate_everything_lol[19].middle.z_delay_mid/d_sig_reg.
+DSP Report: operator generate_everything_lol[1].middle.multiply_mid/conv is absorbed into DSP generate_everything_lol[19].middle.z_delay_mid/d_sig_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 610.480 ; gain = 297.797
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|multiplier  | A*(B:0x3fee8) | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|multiplier  | A*(B:0x31d)   | 16     | 11     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|multiplier  | A*(B:0x3f822) | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|multiplier  | A*(B:0x1c9c)  | 16     | 14     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|multiplier  | A*(B:0x2e00)  | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|multiplier  | A*(B:0x51)    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|main        | (A*(B:0x51))'     | 16     | 8      | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|main        | C'+A*(B:0x3fee8)  | 16     | 10     | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|main        | C'+A*(B:0x31d)    | 16     | 11     | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|main        | C'+A*(B:0x3f822)  | 16     | 12     | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|main        | C'+A*(B:0x1c9c)   | 16     | 14     | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|main        | PCIN+A*(B:0x2e00) | 16     | 15     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|main        | PCIN+A*(B:0x1c9c) | 16     | 14     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|main        | C'+A*(B:0x3f822)  | 16     | 12     | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|main        | C'+A*(B:0x31d)    | 16     | 11     | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|main        | C'+A*(B:0x3fee8)  | 16     | 10     | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|main        | C'+A*(B:0x51)     | 16     | 8      | 37     | -      | 37     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -210,7 +270,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 610.480 ; gain = 297.797
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -221,11 +281,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'generate_everything_lol[3].middle.z_delay/d_sig_reg[36]' (FD) to 'generate_everything_lol[3].middle.z_delay/d_sig_reg[33]'
-INFO: [Synth 8-3886] merging instance 'generate_everything_lol[3].middle.z_delay/d_sig_reg[35]' (FD) to 'generate_everything_lol[3].middle.z_delay/d_sig_reg[33]'
-INFO: [Synth 8-3886] merging instance 'generate_everything_lol[3].middle.z_delay/d_sig_reg[33]' (FD) to 'generate_everything_lol[3].middle.z_delay/d_sig_reg[34]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -249,121 +306,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[25]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 2nd driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[27]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 3rd driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[29]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 4th driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[31]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 5th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[25]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 6th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[27]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 7th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[29]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 8th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[31]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 9th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[33]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 10th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[35]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 11th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[36]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 12th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[34]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 13th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[32]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 14th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[30]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 15th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[28]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 16th driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[26]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 17th driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[32]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 18th driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[30]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 19th driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[28]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 20th driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[26]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][25] with 21th driver pin 'generate_everything_lol[3].middle.multiply/conv/P[25]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][24] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[24]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][24] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[24]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][24] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[24]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][23] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[23]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][23] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[23]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][23] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[23]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][22] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[22]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][22] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[22]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][22] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[22]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][21] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[21]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][21] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[21]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][21] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[21]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][20] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[20]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][20] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[20]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][20] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[20]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][19] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[19]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][19] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[19]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][19] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[19]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][18] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[18]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][18] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[18]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][18] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[18]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][17] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[17]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][17] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[17]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][17] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[17]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][16] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[16]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][16] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[16]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][16] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[16]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][15] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[15]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][15] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[15]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][15] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[15]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][14] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[14]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][14] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[14]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][14] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[14]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][13] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[13]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][13] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[13]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][13] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[13]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][12] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[12]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][12] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[12]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][12] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[12]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][11] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[11]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][11] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[11]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][11] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[11]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][10] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[10]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][10] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[10]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][10] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[10]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][9] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[9]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][9] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[9]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][9] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[9]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][8] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[8]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][8] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[8]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][8] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[8]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][7] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[7]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][7] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[7]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][7] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[7]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][6] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[6]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][6] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[6]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][6] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[6]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][5] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[5]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][5] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[5]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][5] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[5]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][4] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[4]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][4] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[4]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][4] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[4]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][3] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[3]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][3] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[3]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][3] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[3]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][2] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[2]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][2] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[2]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][2] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[2]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][1] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[1]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][1] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[1]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][1] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[1]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][0] with 1st driver pin 'generate_everything_lol[3].middle.z_delay/d_sig_reg[0]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][0] with 2nd driver pin 'generate_everything_lol[2].middle.z_delay/d_sig_reg[0]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net dsp_cache[3][0] with 3rd driver pin 'generate_everything_lol[3].middle.multiply/conv/P[0]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/multiplier.vhd:17]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net sum55_out[36] with 1st driver pin 'generate_everything_lol[5].middle.add/sum_carry__8/O[0]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:15]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net sum55_out[36] with 2nd driver pin 'generate_everything_lol[4].middle.z_delay/d_sig_reg[36]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net sum55_out[35] with 1st driver pin 'generate_everything_lol[5].middle.add/sum_carry__7/O[3]' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd:15]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net sum55_out[35] with 2nd driver pin 'generate_everything_lol[4].middle.z_delay/d_sig_reg[35]/Q' [C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd:21]
-INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|      383|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -375,25 +331,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -410,67 +366,36 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
-|2     |CARRY4  |    96|
-|3     |DSP48E1 |     6|
-|4     |LUT1    |    15|
-|5     |LUT2    |   348|
-|6     |FDRE    |   626|
-|7     |IBUF    |    17|
-|8     |OBUF    |    37|
+|2     |DSP48E1 |    11|
+|3     |IBUF    |    17|
+|4     |OBUF    |    37|
 +------+--------+------+
 
 Report Instance Areas: 
-+------+------------------------------------------------+--------------+------+
-|      |Instance                                        |Module        |Cells |
-+------+------------------------------------------------+--------------+------+
-|1     |top                                             |              |  1146|
-|2     |  \generate_everything_lol[10].middle.add       |adder         |    10|
-|3     |  \generate_everything_lol[10].middle.multiply  |multiplier    |    35|
-|4     |  \generate_everything_lol[10].middle.z_delay   |dff           |    41|
-|5     |  \generate_everything_lol[11].middle.add       |adder_0       |    10|
-|6     |  \generate_everything_lol[11].middle.z_delay   |dff_1         |    41|
-|7     |  \generate_everything_lol[12].middle.add       |adder_2       |     1|
-|8     |  \generate_everything_lol[12].middle.z_delay   |dff_3         |    41|
-|9     |  \generate_everything_lol[13].middle.add       |adder_4       |    10|
-|10    |  \generate_everything_lol[13].middle.z_delay   |dff_5         |    41|
-|11    |  \generate_everything_lol[14].middle.add       |adder_6       |     1|
-|12    |  \generate_everything_lol[14].middle.z_delay   |dff_7         |    41|
-|13    |  \generate_everything_lol[15].middle.add       |adder_8       |    10|
-|14    |  \generate_everything_lol[15].middle.z_delay   |dff_9         |    41|
-|15    |  \generate_everything_lol[16].middle.add       |adder_10      |     1|
-|16    |  \generate_everything_lol[16].middle.z_delay   |dff_11        |    43|
-|17    |  \generate_everything_lol[17].middle.add       |adder_12      |    10|
-|18    |  \generate_everything_lol[17].middle.z_delay   |dff_13        |    73|
-|19    |  \generate_everything_lol[18].middle.add       |adder_14      |     1|
-|20    |  \generate_everything_lol[18].middle.z_delay   |dff_15        |    41|
-|21    |  \generate_everything_lol[19].middle.add       |adder_16      |    10|
-|22    |  \generate_everything_lol[19].middle.multiply  |multiplier_17 |    35|
-|23    |  \generate_everything_lol[2].middle.z_delay    |dff_18        |    37|
-|24    |  \generate_everything_lol[3].middle.multiply   |multiplier_19 |     1|
-|25    |  \generate_everything_lol[3].middle.z_delay    |dff_20        |    35|
-|26    |  \generate_everything_lol[4].middle.z_delay    |dff_21        |    37|
-|27    |  \generate_everything_lol[5].middle.add        |adder_22      |    10|
-|28    |  \generate_everything_lol[5].middle.multiply   |multiplier_23 |    69|
-|29    |  \generate_everything_lol[5].middle.z_delay    |dff_24        |    41|
-|30    |  \generate_everything_lol[6].middle.add        |adder_25      |     1|
-|31    |  \generate_everything_lol[6].middle.z_delay    |dff_26        |    41|
-|32    |  \generate_everything_lol[7].middle.add        |adder_27      |    10|
-|33    |  \generate_everything_lol[7].middle.multiply   |multiplier_28 |    69|
-|34    |  \generate_everything_lol[7].middle.z_delay    |dff_29        |    41|
-|35    |  \generate_everything_lol[8].middle.add        |adder_30      |     1|
-|36    |  \generate_everything_lol[8].middle.z_delay    |dff_31        |    41|
-|37    |  \generate_everything_lol[9].middle.add        |adder_32      |    10|
-|38    |  \generate_everything_lol[9].middle.multiply   |multiplier_33 |    69|
-|39    |  \generate_everything_lol[9].middle.z_delay    |dff_34        |    41|
-+------+------------------------------------------------+--------------+------+
++------+---------------------------------------------------+-------+------+
+|      |Instance                                           |Module |Cells |
++------+---------------------------------------------------+-------+------+
+|1     |top                                                |       |    66|
+|2     |  \generate_everything_lol[10].middle.z_delay_mid  |dff    |     1|
+|3     |  \generate_everything_lol[11].middle.z_delay_mid  |dff_0  |     1|
+|4     |  \generate_everything_lol[13].middle.z_delay_mid  |dff_1  |     1|
+|5     |  \generate_everything_lol[15].middle.z_delay_mid  |dff_2  |     1|
+|6     |  \generate_everything_lol[17].middle.z_delay_mid  |dff_3  |     1|
+|7     |  \generate_everything_lol[19].middle.z_delay_mid  |dff_4  |     1|
+|8     |  \generate_everything_lol[1].middle.z_delay_mid   |dff_5  |     1|
+|9     |  \generate_everything_lol[3].middle.z_delay_mid   |dff_6  |     1|
+|10    |  \generate_everything_lol[5].middle.z_delay_mid   |dff_7  |     1|
+|11    |  \generate_everything_lol[7].middle.z_delay_mid   |dff_8  |     1|
+|12    |  \generate_everything_lol[9].middle.z_delay_mid   |dff_9  |     1|
++------+---------------------------------------------------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1008 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 611.770 ; gain = 299.086
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.852 ; gain = 289.648
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 601.855 ; gain = 289.648
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -478,11 +403,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-92 Infos, 2 Warnings, 100 Critical Warnings and 0 Errors encountered.
+92 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 728.484 ; gain = 428.438
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 725.398 ; gain = 426.207
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 728.484 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 14:23:39 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 725.398 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 17:03:38 2019...
