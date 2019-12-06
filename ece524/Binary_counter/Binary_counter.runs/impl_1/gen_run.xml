@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1567532019">
+  <File Type="PWROPT-DCP" Name="Binary_Counter_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="Binary_Counter_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Binary_Counter.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Binary_Counter_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Binary_Counter_reports.tcl"/>
+  <File Type="BG-DRC" Name="Binary_Counter.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Binary_Counter_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Binary_Counter_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="Binary_Counter.hwdef"/>
+  <File Type="OPT-DCP" Name="Binary_Counter_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Binary_Counter_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="Binary_Counter_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Binary_Counter_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Binary_Counter_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Binary_Counter_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Binary_Counter_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Binary_Counter_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Binary_Counter_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Binary_Counter_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Binary_Counter_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Binary_Counter_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Binary_Counter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Binary_Counter_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Binary_Counter_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Binary_Counter_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Binary_Counter_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Binary_Counter_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Binary_Counter.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="Binary_Counter_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Binary_Counter_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Binary_Counter_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Binary_Counter_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Binary_Counter_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Binary_Counter_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="Binary_Counter.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="Binary_Counter_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Binary_Counter.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Binary_Counter_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="Binary_Counter.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Binary_Counter_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="Binary_Counter.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Binary_Counter_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Binary_Counter_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Binary_Counter_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Binary_Counter_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Binary_Counter_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Binary_Counter_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Binary_Counter_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Binary_Counter_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Binary_Counter.vdi"/>
+  <File Type="ROUTE-CLK" Name="Binary_Counter_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Binary_Counter_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Binary_Counter_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Binary_Counter_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Binary_Counter_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Binary_Counter_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Binary_Counter.nky"/>
+  <File Type="BITSTR-BMM" Name="Binary_Counter_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Binary_Counter.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Binary_Counter.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Binary_Counter.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Binary_Counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Binary_Counter"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Users/Andres/Downloads/zedboard_master_XDC_RevC_D_v3/zedboard_master_XDC_RevC_D_v3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
