@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Tue Nov 26 17:54:24 UTC 2019
+VLNV: xilinx.com:ip:xadc_wiz:3.3
+SynthRuntime: 55

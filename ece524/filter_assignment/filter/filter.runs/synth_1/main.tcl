@@ -17,10 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/carlos/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-2440-LAPTOP-TU5H7POM/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,7 +29,7 @@ set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
 set_property ip_output_repo c:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files c:/Users/carlos/csun/csun_comp_projects/ece524/coe.coe
+add_files C:/Users/carlos/csun/csun_comp_projects/ece524/coe.coe
 read_vhdl -library xil_defaultlib {
   C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/adder.vhd
   C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.srcs/sources_1/new/dff.vhd

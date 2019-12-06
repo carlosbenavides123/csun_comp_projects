@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Nov 11 17:04:48 2019" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Tue Nov 12 12:31:32 2019" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2258646" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "5f9a86c0-f3ee-4620-a8ce-01ad5e27202c" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "3b24a7f27de34bdbbf3c48c7006a030a" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "27" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "38" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz" -context "user_environment"
@@ -30,13 +30,13 @@ webtalk_add_data -client xsim -key SDFModeling -value "false" -context "xsim\\co
 webtalk_add_data -client xsim -key HWCosim -value "false" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key DPI_Used -value "false" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Debug -value "typical" -context "xsim\\command_line_options"
-webtalk_add_data -client xsim -key Simulation_Image_Code -value "83 KB" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Image_Code -value "81 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Image_Data -value "8 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "85" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "67" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "0.72_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Time -value "1.58_sec" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Compiler_Memory -value "52964_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2864561223 -regid "" -xml C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_transmit -clientid 10926322 -regid "" -xml C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

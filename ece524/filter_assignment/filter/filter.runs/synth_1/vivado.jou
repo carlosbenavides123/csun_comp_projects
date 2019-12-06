@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Nov 11 17:03:13 2019
-# Process ID: 15460
+# Start of session at: Tue Nov 12 11:51:30 2019
+# Process ID: 13256
 # Current directory: C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: C:/Users/carlos/csun/csun_comp_projects/ece524/filter_assignment/filter/filter.runs/synth_1/main.vds

@@ -49,66 +49,47 @@ clk_sig <= '1';
 wait for clk_period/2;
 end process;
 
+-- 500kHz
+--din_steady :process
+--begin
+--x_input_sig <= std_logic_vector(to_signed(0, 16));
+--wait for 10ns;     
+--x_input_sig <= std_logic_vector(to_signed(19259, 16));
+--wait for 10ns;    
+--x_input_sig <= std_logic_vector(to_signed(31163, 16));
+--wait for 10ns; 
+--x_input_sig <= std_logic_vector(to_signed(31163, 16));  
+--wait for 10ns;    
+--x_input_sig <= std_logic_vector(to_signed(19259, 16)); 
+--wait for 10ns;     
+--x_input_sig <= std_logic_vector(to_signed(-1, 16));    
+--wait for 10ns;
+--x_input_sig <= std_logic_vector(to_signed(-19261, 16));  
+--wait for 10ns;    
+--x_input_sig <= std_logic_vector(to_signed(-31165, 16)); 
+--wait for 10ns;     
+--x_input_sig <= std_logic_vector(to_signed(-31165, 16));
+--wait for 10ns;      
+--x_input_sig <= std_logic_vector(to_signed(-19261, 16));      
+--wait for 10ns;
+--x_input_sig <= std_logic_vector(to_signed(-1, 16));      
+--end process;
 
--- 8 Mhz
+---- 1.25 Mhz
 din_steady :process
 begin
---wait for clk_period;
-x_input_sig <= std_logic_vector(to_signed(0, 16));      
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(77041, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(124655, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(124655, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(77041, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(0, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(-77041, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(-124655, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(-124655, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(-77041, 16));
-wait for 10ns;
-x_input_sig <= std_logic_vector(to_signed(0, 16));
+x_input_sig <= std_logic_vector(to_signed(0, 16));     
+wait for 10ns; 
+x_input_sig <= std_logic_vector(to_signed(29600, 16));     
+wait for 10ns; 
+x_input_sig <= std_logic_vector(to_signed(-25200, 16));     
+wait for 10ns; 
+x_input_sig <= std_logic_vector(to_signed(-8150, 16));     
+wait for 10ns; 
+x_input_sig <= std_logic_vector(to_signed(32200, 16));  
+wait;
 end process;
 
--- 16Mhz
-
---din_steady_v2 :process
---begin
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(0, 18));      
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(498627, 18));
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(-308168, 18));
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(-308168, 18));
---wait for 12.5ns;
---end process;
-
-
--- 24Mhz
-
---din_steady_v3 :process
---begin
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(0, 18));      
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(498627, 18));
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(308168, 18));
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(-308168, 18));
---wait for 12.5ns;
---d_sig <= std_logic_vector(to_signed(58882, 18));
---wait for 12.5ns;
---end process;
 
 
 end Behavioral;
